@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "duration": 6.0,
+  "fps": 24,
+  "illustration_count": 2,
+  "music": {
+    "asset": "media/music.wav",
+    "duration": 10.0,
+    "offset": 2.0,
+    "events": [
+      {
+        "id": "entry",
+        "time": 0.0,
+        "kind": "phrase_start"
+      },
+      {
+        "id": "reveal",
+        "time": 3.0,
+        "kind": "accent"
+      }
+    ]
+  },
+  "references": [
+    {
+      "id": "style-a",
+      "asset": "media/style.png",
+      "role": "style",
+      "contribution": "Rendering only. No borrowed identity."
+    }
+  ],
+  "reviews": {
+    "storyboard": "pending",
+    "style": "pending",
+    "keyframes": "pending"
+  },
+  "shots": [
+    {
+      "id": "shot-1",
+      "start": 0.0,
+      "end": 3.0,
+      "function": "Open with the bottle partly hidden.",
+      "source_evidence": "Synthetic timing fixture. Not a client spot.",
+      "keyframe_design": "A foreground box partly hides the bottle.",
+      "description": "The camera tracks right past a foreground box and reveals the bottle. Soft room tone only.",
+      "opening": "Label partly hidden.",
+      "ending": "Label readable.",
+      "camera": {
+        "behavior": "track_right",
+        "start": "Behind the foreground box",
+        "end": "Clear view of the label"
+      },
+      "bindings": [
+        "style-a"
+      ],
+      "keyframes": [
+        "frame-1"
+      ],
+      "music_event": "entry",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      },
+      "provider_prompt": null
+    },
+    {
+      "id": "shot-2",
+      "start": 3.0,
+      "end": 6.0,
+      "function": "A hand turns the bottle to the label.",
+      "source_evidence": "Synthetic timing fixture. Not a client spot.",
+      "keyframe_design": "A hand on the outer door handle, viewed from the room.",
+      "description": "The camera holds. No dolly, zoom, or pan. The hand turns the bottle until the label faces camera. A soft tap. No extra score.",
+      "opening": "Label turned away.",
+      "ending": "Label square to camera.",
+      "camera": {
+        "behavior": "fixed",
+        "start": "Bottle close-up",
+        "end": "Same close-up"
+      },
+      "bindings": [
+        "style-a"
+      ],
+      "keyframes": [
+        "frame-2"
+      ],
+      "music_event": "reveal",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      },
+      "provider_prompt": null
+    }
+  ]
+}

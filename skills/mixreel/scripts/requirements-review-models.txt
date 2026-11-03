@@ -1,0 +1,18 @@
+# Optional review models. A normal MixReel run does not install or import these.
+# qa_check.py and media_inspect.py load a model only when --models names it.
+# Weights are not downloaded unless --allow-model-download is also set.
+#
+# InsightFace buffalo_s pretrained weights: non-commercial research license.
+# Commercial use needs a separate license from the model vendor.
+# The checker asks InsightFace for the small buffalo_s pack only when
+# --allow-model-download is set. Leave that flag off for commercial jobs.
+# SyncNet weights are research-only. They are not a pip package and are not
+# downloaded by these scripts. A public copy of syncnet_v2.model is hosted at
+# https://huggingface.co/ByteDance/LatentSync-1.6 under auxiliary/.
+# Point MIXREEL_SYNCNET_DIR at a local directory you are allowed to use.
+#
+open_clip_torch
+torch
+torchvision
+insightface
+onnxruntime

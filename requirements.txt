@@ -1,0 +1,6 @@
+# Offline quickstart and tests. ffmpeg and ffprobe must be on PATH.
+# Optional review models live in skills/mixreel/scripts/requirements-review-models.txt
+# and are not installed by this file.
+numpy
+pillow
+librosa

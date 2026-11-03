@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reference analysis"
+  short_description: "Read a reference ad for hook, pacing, cuts, and copy"
+  default_prompt: "Use $mixreel-analyze on the reference I provide. Record evidence with times. Do not copy the film."
+policy:
+  allow_implicit_invocation: true

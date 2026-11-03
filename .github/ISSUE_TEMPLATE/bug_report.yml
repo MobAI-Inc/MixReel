@@ -1,0 +1,26 @@
+name: Bug report
+description: A local tool, skill, or provider adapter misbehaved
+title: ""
+labels: []
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, and what you got. Do not paste API keys.
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Python, ffmpeg, and the commit you used.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps
+      description: Commands or a minimal plan. Synthetic media is enough.
+    validations:
+      required: false

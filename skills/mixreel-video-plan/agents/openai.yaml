@@ -1,0 +1,6 @@
+interface:
+  display_name: "Video plan"
+  short_description: "Group shots into provider requests and list keyframes"
+  default_prompt: "Use $mixreel-video-plan to group the approved script. Do not invent model limits or prices."
+policy:
+  allow_implicit_invocation: true

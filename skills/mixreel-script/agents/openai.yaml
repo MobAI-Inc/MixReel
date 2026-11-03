@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ad script"
+  short_description: "Write a product-ad script and an optional 3D previs"
+  default_prompt: "Use $mixreel-script to write the ad script. Stop before images. Use previs only if blocking needs it."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Keyframes"
+  short_description: "Make only the keyframes the approved groups need"
+  default_prompt: "Use $mixreel-keyframes for the approved frames only. One sample before a batch. Keep the real logo and package."
+policy:
+  allow_implicit_invocation: true

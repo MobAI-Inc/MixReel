@@ -1,0 +1,123 @@
+{
+  "version": 2,
+  "duration": 6.0,
+  "fps": 24,
+  "illustration_count": 1,
+  "music": {
+    "asset": "media/music.wav",
+    "duration": 10.0,
+    "offset": 2.0,
+    "events": [
+      {
+        "id": "entry",
+        "time": 0.0,
+        "kind": "phrase_start"
+      },
+      {
+        "id": "reveal",
+        "time": 3.0,
+        "kind": "accent"
+      }
+    ]
+  },
+  "references": [
+    {
+      "id": "style-a",
+      "asset": "media/style.png",
+      "role": "style",
+      "contribution": "Rendering only. No borrowed identity.",
+      "media_type": "image"
+    },
+    {
+      "id": "motion-a",
+      "asset": "media/reference.mp4",
+      "media_type": "video",
+      "role": "motion",
+      "contribution": "Camera progression only. No borrowed style or identity."
+    },
+    {
+      "id": "timing-a",
+      "asset": "media/timing.wav",
+      "media_type": "audio",
+      "role": "timing",
+      "contribution": "Prepared excerpt aligned to this request; rhythm only, not generated score."
+    }
+  ],
+  "reviews": {
+    "storyboard": "pending",
+    "style": "pending",
+    "keyframes": "pending"
+  },
+  "shots": [
+    {
+      "id": "shot-1",
+      "start": 0.0,
+      "end": 3.0,
+      "function": "Open with the bottle partly hidden.",
+      "source_evidence": "Synthetic timing fixture. Not a client spot.",
+      "keyframe_design": "A foreground box partly hides the bottle. One new keyframe sets the table.",
+      "description": "The camera tracks right past a foreground box and reveals the bottle. Soft room tone only.",
+      "opening": "Label partly hidden.",
+      "ending": "Label readable.",
+      "camera": {
+        "behavior": "track_right",
+        "start": "Behind the foreground box",
+        "end": "Clear view of the label"
+      },
+      "bindings": [
+        "style-a"
+      ],
+      "keyframes": [
+        "frame-1"
+      ],
+      "music_event": "entry",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    },
+    {
+      "id": "shot-2",
+      "start": 3.0,
+      "end": 6.0,
+      "function": "A hand turns the bottle to the label.",
+      "source_evidence": "Synthetic timing fixture. Not a client spot.",
+      "keyframe_design": "A hand on the bottle, no new keyframe. Reuse the table layout.",
+      "description": "The camera holds. No dolly, zoom, or pan. The hand turns the bottle until the label faces camera. A soft tap. No extra score.",
+      "opening": "Label turned away.",
+      "ending": "Label square to camera.",
+      "camera": {
+        "behavior": "fixed",
+        "start": "Bottle close-up",
+        "end": "Same close-up"
+      },
+      "bindings": [
+        "style-a"
+      ],
+      "keyframes": [],
+      "music_event": "reveal",
+      "transition": {
+        "type": "cut",
+        "duration": 0
+      }
+    }
+  ],
+  "generation_groups": [
+    {
+      "id": "sequence-1",
+      "shot_ids": [
+        "shot-1",
+        "shot-2"
+      ],
+      "requested_duration": 6.0,
+      "bindings": [
+        "style-a",
+        "motion-a",
+        "timing-a"
+      ],
+      "reason": "Both shots are one continuous product action; one request keeps the join.",
+      "continuity": "The bottle stays on the same side of frame. The label stays turned away until the hand rotates it. Keep screen direction.",
+      "provider_prompt": null
+    }
+  ]
+}
