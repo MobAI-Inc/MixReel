@@ -9,7 +9,9 @@ Pipeline stage 2. The map is [pipeline](../mixreel/references/pipeline.md). Deli
 
 ## Steps
 
-Open only the file for the step you are on.
+Open only the file for the step you are on. Before step 1, make the film's folder with `--film` as [project](../mixreel/references/project.md) describes, picking a short name yourself if the user gave none, and start its `BRIEF.md`.
+
+A request as short as "write a 20-second script" is enough to start. Fill the brief from the request and the brand files, mark the rest `unknown`, and ask only when the answer would change the script. The stop point is the script unless the user asked for more.
 
 | Step | Open |
 | --- | --- |
