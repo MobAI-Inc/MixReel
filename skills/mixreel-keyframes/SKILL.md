@@ -14,6 +14,7 @@ The images, `keyframes.md`, the ordered input manifest, comparison notes, and co
 ## Must follow
 
 - Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
+- Read [image models](references/image-models.md) before any image call. It says what each model is like and where to start. The user's config and choice decide, and a model never changes silently.
 - One composition source per new frame. Prefer a previs still when you have one. Otherwise use a user-supplied, licensed reference. Do not fetch images from a third-party site.
 - Generation and editing may use different providers. Make one sample and wait before the batch. The sample is a creative check, not a hunt for a private model ranking.
 - Carry the user's product or person reference on every frame that must match it.
@@ -25,6 +26,8 @@ The images, `keyframes.md`, the ordered input manifest, comparison notes, and co
 
 | When | Open |
 | --- | --- |
+| Before any image call | [Image models](references/image-models.md) |
+| Writing a request for a chosen model | [Request parameters](references/image-model-params.md) |
 | Choosing inputs | [Images](references/images.md) |
 | Choosing the composition source | [Composition](references/composition.md) |
 | Running the diff | [Keyframe tools](references/keyframe-tools.md) |

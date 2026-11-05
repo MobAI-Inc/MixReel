@@ -7,6 +7,7 @@
 - A new user can go from an empty folder to brand files and a first script with two plain requests. The pipeline map has a brand-files row, skill commands work from the installed folder, a missing reference skips analysis, and a requested script arrives whole.
 - The shot table has its own columns for start state, end state, the join to the next shot, and the spoken line.
 - The project file says who fills in and reads each brand file, and what to do while it is empty.
+- Image model notes for Midjourney, Ideogram and GPT Image, with a table of where to start and official parameters with their check dates. They are recommendations from painted illustration work. The model stays the user's choice.
 
 ## 0.1.0
 

@@ -32,6 +32,7 @@ A host without skill dispatch opens the linked `SKILL.md` and follows it. An exi
 - Client marks follow [brand fidelity](references/brand-fidelity.md).
 - A repair follows [diagnosis](../mixreel-review/references/diagnosis.md). It changes only what needs changing.
 - Show the script before illustrations, one sample before an image batch, and the groups plus references before video submission. A machine check is not human approval.
+- Before any image call, read [image models](../mixreel-keyframes/references/image-models.md). It gives recommendations and starting points. The model stays the user's choice.
 - Generation and editing may use different providers. Make one sample before a batch. Do not bake a private model route into the plan.
 - Proposed creative choices stay proposals until the user approves them or has delegated that choice.
 
