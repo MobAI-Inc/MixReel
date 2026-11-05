@@ -8,6 +8,7 @@
 - The shot table has its own columns for start state, end state, the join to the next shot, and the spoken line.
 - The project file says who fills in and reads each brand file, and what to do while it is empty.
 - Image model notes for Midjourney, Ideogram and GPT Image, with a table of where to start and official parameters with their check dates. They are recommendations from painted illustration work. The model stays the user's choice.
+- Video model notes for MiniMax H3 and Seedance 2, with official limits and prices as of their check dates and links to the vendors' prompt guides. MixReel still adds no prompt format.
 
 ## 0.1.0
 

@@ -24,7 +24,7 @@ Reserve each request once in the journal, even when its file is used by several 
 
 Write the prompt in the language the provider's current public guide expects. Bind images in the order the request will upload them. If you do not yet know that order, the prompt is not ready.
 
-Say what the camera does, what the product or the person does, and the end state. Do not add a private multi-section template. Do not convert one vendor's prompt into another's by renaming fields.
+Say what the camera does, what the product or the person does, and the end state. Do not add a private multi-section template. Do not convert one vendor's prompt into another's by renaming fields. Limits, prices, traits and links to the official guides are in [MiniMax H3](minimax-h3.md) and [Seedance 2](seedance-2.md).
 
 ## Comparisons
 
