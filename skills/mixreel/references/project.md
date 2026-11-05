@@ -17,11 +17,24 @@ A project holds one brand or client and outlives any film, task or session. Keep
   <film>/                 one per ad or film
     BRIEF.md
     script.md
-    reference-sheet.jpg
+    reference-sheet.jpg   real images labelled by shot, when the project has any
     plan.json, providers/, journal.json, media/, review.md   once production starts
 ```
 
 Every source file the brand supplies goes in `brand/assets/`, so each film takes its logo, packaging and UI from one place. `brand-context.md` lists what is there and what each file may be used for.
+
+Most of these files start empty, and that is normal for a first film. A file that stays empty is skipped, not guessed at.
+
+| File | Who fills it in | Who reads it | While it is empty |
+| --- | --- | --- | --- |
+| `brand-context.md` | [Build the brand files](#build-the-brand-files) | Script step 1, and any stage showing the product | Build it before writing a script |
+| `requirements.md` | Any stage, when the client states a standing rule | Every stage | There are no standing rules |
+| `audience-taste.md` | Script step 2, then step 7 once the user approves or rejects a script | Script steps 2 and 3 | Work from the brand context and the user |
+| `competitors.md` | Analyze, when the ad is a competitor's. Only what you watched or the user reported | Script steps 2 and 3 | Skip it. Research competitors only when asked |
+| `films.md` | Script step 7 | Script step 3 | This is the first film |
+| `taste-library/` | Analyze, when the user wants an ad kept for this brand. One folder per ad, with the analysis note and contact sheet | Script steps 3 and 4 | Skip it |
+| `assets/` | Build the brand files, or any stage when the user supplies a file | Script, Keyframes, Produce | List what is missing in the script |
+| `reference-sheet.jpg` | Script step 5, when the project has images for these shots | The user reading the script, and Keyframes for finding the real files | Skip it |
 
 ## Where it lives
 

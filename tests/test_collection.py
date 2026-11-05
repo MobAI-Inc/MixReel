@@ -52,6 +52,16 @@ class CollectionTests(unittest.TestCase):
                        'On-screen copy', 'Spoken line', 'Sound'):
             self.assertIn('| ' + column + ' |', header)
 
+    def test_each_project_file_has_a_stage_that_writes_or_reads_it(self):
+        stages = ['skills/mixreel-analyze/references/analysis.md',
+                  'skills/mixreel-script/references/audience-taste.md',
+                  'skills/mixreel-script/references/marketing-idea.md',
+                  'skills/mixreel-script/references/storyboard.md']
+        text = ''.join((ROOT / stage).read_text() for stage in stages)
+        for name in ('brand/competitors.md', 'brand/taste-library/', 'brand/audience-taste.md',
+                     'reference-sheet.jpg'):
+            self.assertIn(name, text)
+
     def test_existing_install_is_not_overwritten(self):
         install(self.dest)
         entry = self.dest / 'mixreel-script/SKILL.md'

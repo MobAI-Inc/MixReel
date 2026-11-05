@@ -19,11 +19,11 @@ Open only the file for the step you are on.
 | 4. Borrow structure only, when there is a reference | [Adaptation](references/adaptation.md) |
 | 5. Shot list | [Storyboard](references/storyboard.md) and [the template](assets/SCRIPT.template.md) |
 | 6. Previs, if blocking needs it | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
-| 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. |
+| 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. When the user approves or rejects the script, update its row and record the reason in `brand/audience-taste.md`. |
 
 ## Output
 
-`script.md` from the template. A complete script fills every column of its shot table. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
+`script.md` from the template, and `reference-sheet.jpg` when the project has images for its shots. A complete script fills every column of its shot table. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
 
 An outline may leave production fields pending. Do not invent provider settings or prices to satisfy a validator.
 

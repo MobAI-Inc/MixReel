@@ -1,6 +1,6 @@
 # The idea
 
-Before writing, read `brand/films.md`, the scripts the user has approved and the approaches they have rejected.
+Before writing, read `brand/films.md`, and the approved scripts and rejected approaches in `brand/audience-taste.md`. Ads in `brand/competitors.md` and `brand/taste-library/` show which forms this viewer already knows. Any of these may be empty.
 
 Pick one idea that makes the message visible. Write it as an event a camera can shoot: a hand, a product, a screen, a result. The idea is not a slogan glued on at the end.
 
