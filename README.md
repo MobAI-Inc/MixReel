@@ -64,13 +64,14 @@ Install the skills into an agent skills directory when you want the full pipelin
 python3 scripts/install.py --destination ~/.agents/skills
 ```
 
-The installer copies seven skills, refuses to overwrite a directory that already exists, and does not read keys. Use another destination, such as `.claude/skills` or `~/.codex/skills`, if that is where your agent loads skills.
+The installer copies seven skills, refuses to overwrite a directory that already exists, and does not read keys. Use another destination, such as `~/.claude/skills` or `~/.codex/skills`, if that is where your agent loads skills. For one project only, give its full path, such as `/path/to/your-project/.claude/skills`. A relative path would land inside this clone.
 
 ## Pipeline
 
 ```mermaid
 flowchart LR
-  A[Analyze a reference ad] --> B[Script and 3D previs]
+  Z[Brand files] --> A[Analyze a reference ad, if you have one]
+  A --> B[Script and 3D previs]
   B --> C[Group shots for the provider]
   C --> D[Keyframes from your assets]
   D --> E[Your video API]
@@ -79,7 +80,12 @@ flowchart LR
   G --> H[Review]
 ```
 
-Open `skills/mixreel/SKILL.md`. It routes the agent to one stage at a time. Stages can also be invoked on their own.
+Open your agent in the folder where you want the work kept, and ask for what you need. You can stop after any step.
+
+- `Use mixreel to build brand files for my app`
+- `Write a 20-second script`
+
+The `mixreel` skill routes the agent to one stage at a time. Stages can also be invoked on their own. Neither request needs an API key.
 
 ## What you can do with it
 
