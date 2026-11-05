@@ -15,6 +15,7 @@ Visit it twice. Before keyframes, write groups and which frames are necessary. A
 
 ## Must follow
 
+- Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
 - Read [planning](references/planning.md). Group by what the verified provider can accept, not by a private prompt formula.
 - Do not invent durations, reference caps, or prices. Read [providers](../mixreel/references/providers.md) and the user's config.
 - Screen recordings and other real assets stay out of generation groups.

@@ -36,5 +36,6 @@ Read the sequence once as a viewer who does not know the product, and once again
 - Does any beat depend on a fact the viewer was never shown?
 - Are brand, UI, and copy accurate and sourced?
 - Did a borrowed dimension leak into appearance or wording?
+- Does the film use an approach the user has rejected in the brand record, or repeat an event or idea listed in `brand/films.md`?
 
 Do not certify a script as viral or high-converting.

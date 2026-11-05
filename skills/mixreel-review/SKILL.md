@@ -13,6 +13,7 @@ Pipeline stage 7. The map is [pipeline](../mixreel/references/pipeline.md). Judg
 
 ## Must follow
 
+- Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
 - Watch and listen when you can. A sampled review says sampled. A silent review says silent.
 - Follow [frame reading](../mixreel/references/frame-reading.md). Every inspection image gets looked at. If one is skipped, the review is incomplete.
 - Run the suspect script, then the frame pack, then decide. Suspects are not the verdict. Pixel problems use the frames. Action, line, and gaze problems use the real-time playback. If those disagree, write "uncertain".

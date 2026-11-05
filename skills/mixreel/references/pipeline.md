@@ -19,7 +19,8 @@ An existing adequate artifact can satisfy an input. Stop at the deliverable the 
 | Rule | Source | Open it when |
 | --- | --- | --- |
 | Accepted inputs | [Handoffs](handoffs.md) | You are reusing a file |
-| Project folder and brief | [Records](records.md) | You are setting up |
+| Project folder and brand layer | [Project](project.md) | You are starting any stage |
+| Brief and journal | [Records](records.md) | You are writing one of them |
 | Logos, packaging, UI | [Brand fidelity](brand-fidelity.md) | A client mark is on screen |
 | How to look at stills | [Frame reading](frame-reading.md) | You are reading frames instead of watching |
 | Provider capabilities | [Providers](providers.md) | A capability or a paid call is unresolved |

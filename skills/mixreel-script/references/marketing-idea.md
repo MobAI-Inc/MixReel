@@ -1,5 +1,7 @@
 # The idea
 
+Before writing, read `brand/films.md`, the scripts the user has approved and the approaches they have rejected.
+
 Pick one idea that makes the message visible. Write it as an event a camera can shoot: a hand, a product, a screen, a result. The idea is not a slogan glued on at the end.
 
 For the idea, record:

@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- One project folder per brand. `brand/` keeps the brand context, standing requirements, source assets and `films.md`, a record of every film. Every stage finds the project first and follows its requirements. Scripts avoid events already listed.
+- `init_project.py` creates the brand folder on first use. The location is `--root`, else `$MIXREEL_PROJECTS_DIR`, else `mixreel-projects/` under the working directory. It never overwrites a file.
+
 ## 0.1.0
 
 First public edition for ad and product short videos.
