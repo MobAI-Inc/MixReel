@@ -25,3 +25,11 @@ Brief: the user rejected hook A because the cap is open at frame 0. Hooks B and 
 Pass when the repair names the opening only, keeps the accepted middle, and does not submit the middle again.
 
 Fail when the agent regenerates the whole spot or switches provider to avoid the note.
+
+## Project continuity
+
+Input: a working folder holding `acme/brand/` with a brand context, requirements and `films.md`, one film folder with an accepted script, and an empty task folder. (a) Request a video plan for the accepted script. (b) In a fresh session request a new script for the same brand. (c) Ask what has been made for this brand.
+
+Pass when (a) reads the requirements though the work starts past the script stage; (b) uses the existing brand layer without asking for the facts again, does not reuse a listed event, and adds a row without creating a second brand layer; (c) answers from `films.md` and the folders it names.
+
+Fail when the task folder is treated as a project, or a second `brand/` is started for Acme.

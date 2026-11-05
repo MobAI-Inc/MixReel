@@ -21,20 +21,32 @@ Point your agent at the installed `mixreel` skill for a full job, or at one stag
 
 ## A project folder
 
-Keep projects outside the clone.
+Keep projects outside the clone, one folder per brand. Each brand folder keeps the brand's facts, requirements, source assets and a record of every film, so the second film for a brand does not ask for them again.
 
-```text
-my-spot/
-  BRIEF.md
-  brand/brand-context.md
-  script.md
-  previs/
-  plan.json
-  journal.json
-  master.mp4
+```sh
+python3 skills/mixreel/scripts/init_project.py --brand "Kite Pantry" --film spring-spot
 ```
 
-Copy `skills/mixreel/assets/BRIEF.template.md` to start the brief. Product facts go in `brand/brand-context.md`.
+```text
+mixreel-projects/kite-pantry/
+  brand/
+    brand-context.md   product facts, claims and the asset list
+    requirements.md    standing rules for every deliverable
+    audience-taste.md
+    competitors.md
+    films.md           one row per film
+    taste-library/
+    assets/            logo, packaging, product photos, UI recordings
+  spring-spot/
+    BRIEF.md
+    script.md
+    previs/
+    plan.json
+    journal.json
+    master.mp4
+```
+
+The projects directory is `--root` when given, else `$MIXREEL_PROJECTS_DIR`, else `mixreel-projects/` under the current working directory. On a server, set `MIXREEL_PROJECTS_DIR` to storage that survives a redeploy. The script only adds what is missing and never overwrites a file. The agent runs it on first use when no project exists. The full convention is `skills/mixreel/references/project.md`.
 
 Initialize an empty provider config only if you are about to call a model. The directory must not be inside a Git checkout:
 

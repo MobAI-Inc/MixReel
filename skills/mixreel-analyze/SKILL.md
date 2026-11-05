@@ -17,6 +17,7 @@ Use this when the user supplies a reference video or a music track. If there is 
 
 ## Must follow
 
+- Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
 - Watch and listen when you can. A frame sample is a frame sample. A silent pass is a silent pass.
 - Follow [frame reading](../mixreel/references/frame-reading.md) for every contact sheet and every extracted frame.
 - Product claims in the reference are not facts about the user's product. Facts come from the advertiser.

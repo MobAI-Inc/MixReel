@@ -19,7 +19,7 @@ Open only the file for the step you are on.
 | 4. Borrow structure only | [Adaptation](references/adaptation.md) |
 | 5. Shot list | [Storyboard](references/storyboard.md) and [the template](assets/SCRIPT.template.md) |
 | 6. Previs, if blocking needs it | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
-| 7. Read the script back | [Ad script](references/ad-script.md) again |
+| 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. |
 
 ## Output
 
@@ -29,6 +29,7 @@ An outline may leave production fields pending. Do not invent provider settings 
 
 ## Must follow
 
+- Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
 - Product facts come from the advertiser.
 - Logos, packaging, product copy, and UI follow [brand fidelity](../mixreel/references/brand-fidelity.md).
 - One message per film unless the user asked for more.

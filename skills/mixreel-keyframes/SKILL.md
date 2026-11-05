@@ -13,6 +13,7 @@ The images, `keyframes.md`, the ordered input manifest, comparison notes, and co
 
 ## Must follow
 
+- Start by finding the project and its brand layer, as [project](../mixreel/references/project.md) describes, and follow `brand/requirements.md` when it exists.
 - One composition source per new frame. Prefer a previs still when you have one. Otherwise use a user-supplied, licensed reference. Do not fetch images from a third-party site.
 - Generation and editing may use different providers. Make one sample and wait before the batch. The sample is a creative check, not a hunt for a private model ranking.
 - Carry the user's product or person reference on every frame that must match it.
