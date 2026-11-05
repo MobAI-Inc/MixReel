@@ -18,9 +18,14 @@ DEFAULT = 'mixreel-projects'
 BRAND_FILES = {
     'brand-context.md': (
         '# Brand context\n\n'
-        'Product, audience, positioning, key messages, what each may claim and its source.\n\n'
-        '## Assets\n\n'
-        'List each file in `assets/` and what it may be used for.\n'),
+        '## Product\n\nWhat it is and what it does.\n\n'
+        '## What is actually different\n\nEach difference, with the screenshot or photo that shows it.\n\n'
+        '## Audience\n\nWho it is for, market, language, and the channels the ads run on.\n\n'
+        '## Key messages\n\nThe one or two things they most want people to know.\n\n'
+        '## Claims\n\n| Claim | Source | Conditions |\n| --- | --- | --- |\n\n'
+        '## Must not claim\n\n\n'
+        '## Assets\n\nEach file in `assets/`, what it may be used for, and where the real UI comes from. '
+        'Missing files stay listed as missing.\n'),
     'requirements.md': (
         '# Requirements\n\n'
         "The client's standing rules for deliverables: lengths, ratios, channels, logo placement, "

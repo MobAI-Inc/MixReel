@@ -42,6 +42,22 @@ Projects sit in one projects directory, one folder per brand. The same rule hold
 
 A one-off with no brand, such as a single illustration or a film with no advertising, keeps its own folder and needs no brand layer.
 
+## Build the brand files
+
+This is row 0 on [the pipeline map](pipeline.md). Do it when the user asks for brand files, and before a first script when `brand/brand-context.md` is still the starter text. It needs no film folder, no reference video and no API key.
+
+1. Ask for the brand name if you do not have it, then find or create the project as above.
+2. Ask for whatever the user has not already given you, all in one message and in everyday words.
+   - the product's name and what it does
+   - what is actually different about it, and a screenshot or photo that shows it
+   - who it is for, in which market and language, and where the ads will run
+   - the one or two things they most want people to know
+   - what must not be claimed, and the source of any price, "free", guarantee or result they want to state
+   - the logo, packaging, photos, screenshots and recordings they have
+3. Write the answers into `brand/brand-context.md` under its headings. A page or document the user points you at can fill a heading when you name it as the source. An answer nobody has stays marked `unknown`. Do not fill a gap from general knowledge or from someone else's ad.
+4. Copy each file they supply into `brand/assets/` and list it with what it may be used for. Put any standing rules they mention in `brand/requirements.md`.
+5. Show them `brand/brand-context.md` and write their corrections back. If brand files were all they asked for, stop here and say that a script is the usual next step.
+
 ## Read what this stage needs
 
 Each stage reads only what bears on it. Follow `brand/requirements.md` wherever it applies, also when the work begins partway, such as from an accepted script. When the brand keeps a file under another name, its `brand/README.md` says so. Where these files differ from this skill's defaults the brand files win, and the latest user instruction wins over both.

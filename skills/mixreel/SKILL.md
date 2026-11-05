@@ -1,6 +1,6 @@
 ---
 name: mixreel
-description: Route a product or ad video. Open the pipeline map first, then only the current stage. Stages stay in order and can also be invoked alone.
+description: Route a product or ad video, or build the brand files for a new brand. Open the pipeline map first, then only the current stage. Stages stay in order and can also be invoked alone.
 ---
 
 # MixReel
@@ -15,6 +15,7 @@ Open [the pipeline map](references/pipeline.md) and follow the row you are on. D
 
 | If you already know the stage | Open |
 | --- | --- |
+| Brand files only | [Build the brand files](references/project.md#build-the-brand-files) |
 | Reference analysis | [Analyze](../mixreel-analyze/SKILL.md) |
 | Script and previs | [Script](../mixreel-script/SKILL.md) |
 | Video plan | [Video plan](../mixreel-video-plan/SKILL.md) |

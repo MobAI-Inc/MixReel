@@ -1,9 +1,10 @@
 # Pipeline map
 
-Read this when you are choosing where to work. Then open only that stage's `SKILL.md`.
+Read this when you are choosing where to work. Then open only that row's file.
 
 | Order | Stage | Open | Stop when you have |
 | --- | --- | --- | --- |
+| 0 | Brand files, once per brand | [Build the brand files](project.md#build-the-brand-files) | `brand/brand-context.md` the user has read |
 | 1 | Reference analysis, when the user supplied a reference | [Analyze](../../mixreel-analyze/SKILL.md) | `reference-analysis.md` |
 | 2 | Script and previs | [Script](../../mixreel-script/SKILL.md) | `script.md`, and previs stills when the blocking needs them |
 | 3 | Video plan, before images | [Video plan](../../mixreel-video-plan/SKILL.md) | groups, frame needs, continuations |
