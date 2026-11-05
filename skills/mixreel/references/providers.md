@@ -16,7 +16,7 @@ The repository includes two examples that call official public APIs with the use
 - MiniMax video, environment `MINIMAX_API_KEY`. Optional `MINIMAX_API_BASE` and `MINIMAX_MODEL`.
 - Seedance on Volcengine Ark or BytePlus, environment `ARK_API_KEY`. Optional `ARK_API_BASE` and `ARK_MODEL`.
 
-Model ids belong in the user's config. The examples document the ids they were checked against and the date of that check. They are not a price list and they are not a private prompt format.
+What each model tends to do, as recommendations and not a choice made for you, is in [image models](../../mixreel-keyframes/references/image-models.md), [MiniMax H3](../../mixreel-video-plan/references/minimax-h3.md) and [Seedance 2](../../mixreel-video-plan/references/seedance-2.md). Model ids belong in the user's config. The examples document the ids they were checked against and the date of that check. They are not a price list and they are not a private prompt format.
 
 Reference audio, when the official docs allow it, can carry a voice. First-frame inputs and reference inputs are mutually exclusive on both of those APIs. Independent shots can be separate requests. Connected shots stay in one request when the provider accepts that length.
 

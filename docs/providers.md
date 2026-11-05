@@ -25,6 +25,8 @@ Check capabilities, reserve the budget in the journal, move the job to `submitti
 | `ARK_MODEL` | Dated model id from your console |
 | `GEMINI_API_KEY` | Optional review hints only |
 
+Limits, prices and links to each vendor's prompt guide are kept with the skills, in [MiniMax H3](../skills/mixreel-video-plan/references/minimax-h3.md) and [Seedance 2](../skills/mixreel-video-plan/references/seedance-2.md). Image model notes are in [image models](../skills/mixreel-keyframes/references/image-models.md).
+
 ## What was checked
 
 Checked on 2026-11-03 against public docs. Re-check before you depend on a field. CI does not call these APIs.

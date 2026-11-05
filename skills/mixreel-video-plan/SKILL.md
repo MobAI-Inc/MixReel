@@ -23,4 +23,10 @@ Visit it twice. Before keyframes, write groups and which frames are necessary. A
 
 ## Read next
 
-[Planning](references/planning.md). Prompt wording follows the provider's own public guide. This skill does not add a second, private prompt format.
+| When | Open |
+| --- | --- |
+| Grouping shots and writing the plan | [Planning](references/planning.md) |
+| The user's config uses MiniMax H3 | [MiniMax H3](references/minimax-h3.md) |
+| The user's config uses Seedance | [Seedance 2](references/seedance-2.md) |
+
+Prompt wording follows the provider's own public guide, which these files link to. This skill does not add a second, private prompt format. For any other model, read that vendor's own documentation.
