@@ -1,9 +1,9 @@
 # Local configuration
 
-Create a blank config outside the repository and outside any Git checkout:
+Create a blank config outside the repository and outside any Git checkout. `<mixreel>` is the installed `mixreel` skill folder, the parent of this `references` folder. Replace it with the real path.
 
 ```sh
-python3 skills/mixreel/scripts/init_config.py --directory "$HOME/.config/mixreel"
+python3 <mixreel>/scripts/init_config.py --directory "$HOME/.config/mixreel"
 ```
 
 The command copies the example profiles, writes empty key fields, and does not read existing secrets. On a second run it keeps values you already filled. Files are mode `0600` and the directory is mode `0700` where the operating system allows it.

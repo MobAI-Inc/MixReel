@@ -36,7 +36,7 @@ Projects sit in one projects directory, one folder per brand. The same rule hold
 ## Find it before you work
 
 1. Use the folder the user or the host names. Otherwise look in the working directory, its parents and the projects directory above for a `brand/` folder or a folder named for the brand, including folders the user keeps under other names. Map those, and do not copy them.
-2. When you find one, use it and say which. When there is none, create it with `python3 skills/mixreel/scripts/init_project.py --brand "<brand>"`, resolved from the installed directory, and say where. Add `--film <film>` to create the film folder with its brief. The script never overwrites a file and makes no network request.
+2. When you find one, use it and say which. When there is none, create it with `python3 <mixreel>/scripts/init_project.py --brand "<brand>"` and say where. `<mixreel>` is the installed `mixreel` skill folder, the parent of this `references` folder. Replace it with the real path, and run the command from the folder the user is working in. Add `--film <film>` to create the film folder with its brief. The script never overwrites a file and makes no network request.
 3. A task, thread or session folder is not a project. If the host wants a separate folder per task, that folder is the film's, inside the project. Never start a second brand layer for a brand that already has one.
 4. If this storage will not outlast the session, or other agents working for this user cannot read it, tell the user. The next film would start from nothing.
 

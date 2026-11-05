@@ -41,6 +41,6 @@ A host without skill dispatch opens the linked `SKILL.md` and follows it. An exi
 - [Frame reading](references/frame-reading.md) before you judge stills.
 - [Plan example](assets/plan.example.json) is a synthetic timing fixture, not a script the user must fill in.
 
-Resolve shared scripts from this installed directory. Keep project outputs outside the skill source. The default tools analyze media, fit beat grids, validate plans, render edits, check a finished edit, pack review frames, diff keyframe versions, journal spend, initialize blank configuration, redact exports, and wrap an app recording. None of them submits a paid model job. Optional CLIP, DINOv2, face match, SyncNet, and Gemini stay off until [review tools](../mixreel-review/references/review-tools.md) says the task may call them.
+Shared scripts are in `scripts/` next to this file, wherever it was installed. When a stage file writes `<mixreel>/scripts/...`, `<mixreel>` means this folder. Keep project outputs outside the skill source. The default tools analyze media, fit beat grids, validate plans, render edits, check a finished edit, pack review frames, diff keyframe versions, journal spend, initialize blank configuration, redact exports, and wrap an app recording. None of them submits a paid model job. Optional CLIP, DINOv2, face match, SyncNet, and Gemini stay off until [review tools](../mixreel-review/references/review-tools.md) says the task may call them.
 
 Finish only after you have inspected the requested artifact, reported anything untested, and reconciled any paid work.

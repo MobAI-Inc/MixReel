@@ -21,10 +21,10 @@ Point your agent at the installed `mixreel` skill for a full job, or at one stag
 
 ## A project folder
 
-Keep projects outside the clone, one folder per brand. Each brand folder keeps the brand's facts, requirements, source assets and a record of every film, so the second film for a brand does not ask for them again.
+Keep projects outside the clone, one folder per brand. Run this from the folder you want them in, using the path you installed the skills to. Each brand folder keeps the brand's facts, requirements, source assets and a record of every film, so the second film for a brand does not ask for them again.
 
 ```sh
-python3 skills/mixreel/scripts/init_project.py --brand "Kite Pantry" --film spring-spot
+python3 ~/.agents/skills/mixreel/scripts/init_project.py --brand "Kite Pantry" --film spring-spot
 ```
 
 ```text
@@ -51,7 +51,7 @@ The projects directory is `--root` when given, else `$MIXREEL_PROJECTS_DIR`, els
 Initialize an empty provider config only if you are about to call a model. The directory must not be inside a Git checkout:
 
 ```sh
-python3 skills/mixreel/scripts/init_config.py --directory "$HOME/.config/mixreel"
+python3 ~/.agents/skills/mixreel/scripts/init_config.py --directory "$HOME/.config/mixreel"
 ```
 
 ## Next

@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -37,6 +38,12 @@ class CollectionTests(unittest.TestCase):
                              capture_output=True, text=True)
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertTrue((config / 'credentials.json').is_file())
+
+    def test_shipped_commands_do_not_assume_the_repository_layout(self):
+        # After installation there is no skills/ folder, so these paths would not exist.
+        stale = re.compile(r'(?<![\w<>/.-])skills/mixreel[\w-]*/')
+        hits = [str(p.relative_to(ROOT)) for p in (ROOT / 'skills').rglob('*.md') if stale.search(p.read_text())]
+        self.assertEqual(hits, [])
 
     def test_existing_install_is_not_overwritten(self):
         install(self.dest)
