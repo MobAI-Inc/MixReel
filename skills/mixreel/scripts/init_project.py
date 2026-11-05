@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 
 SKILL = Path(__file__).resolve().parents[1]
 ENV = 'MIXREEL_PROJECTS_DIR'
@@ -103,7 +104,9 @@ def main():
         result = initialize(args.brand, args.film, args.root)
     except (ValueError, OSError) as exc:
         parser.exit(1, f'Project initialization failed: {exc}\n')
-    print(json.dumps(result, indent=2))
+    # Show non-ASCII paths as written. A terminal that cannot encode them gets an escape, not a crash.
+    sys.stdout.reconfigure(errors='backslashreplace')
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
 if __name__ == '__main__':
