@@ -64,7 +64,14 @@ python3 scripts/demo.py
 python3 scripts/install.py --destination ~/.agents/skills
 ```
 
-安装器只复制文件，不覆盖已有目录，不读取密钥。你的 agent 如果从别的目录加载技能，把目标换成那个目录即可，例如 `~/.claude/skills` 或 `~/.codex/skills`。只给某一个项目装时写完整路径，例如 `/你的项目路径/.claude/skills`，写相对路径会装进这个克隆目录里。
+安装器只复制文件，不覆盖已有目录，不读取密钥。目标必须是 agent 读取技能的文件夹，项目里一个叫 `skills/` 的文件夹不算。
+
+| Agent | 只给一个项目 | 给所有项目 |
+| --- | --- | --- |
+| Claude Code | `/你的项目路径/.claude/skills` | `~/.claude/skills` |
+| Codex | 查你所用版本的文档 | `~/.codex/skills` |
+
+要写完整路径，写相对路径会装进这个克隆目录里。装完 agent 列不出 `mixreel` 技能的话，在那个文件夹里开一个新会话。
 
 ## 流程
 

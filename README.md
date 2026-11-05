@@ -64,7 +64,14 @@ Install the skills into an agent skills directory when you want the full pipelin
 python3 scripts/install.py --destination ~/.agents/skills
 ```
 
-The installer copies seven skills, refuses to overwrite a directory that already exists, and does not read keys. Use another destination, such as `~/.claude/skills` or `~/.codex/skills`, if that is where your agent loads skills. For one project only, give its full path, such as `/path/to/your-project/.claude/skills`. A relative path would land inside this clone.
+The installer copies seven skills, refuses to overwrite a directory that already exists, and does not read keys. The destination has to be a folder your agent reads skills from. A folder named `skills/` in your project does not count.
+
+| Agent | One project | Every project |
+| --- | --- | --- |
+| Claude Code | `/path/to/your-project/.claude/skills` | `~/.claude/skills` |
+| Codex | Check your version's docs | `~/.codex/skills` |
+
+Give a full path. A relative one would land inside this clone. If the agent does not list the `mixreel` skills afterwards, start a new session in that folder.
 
 ## Pipeline
 
