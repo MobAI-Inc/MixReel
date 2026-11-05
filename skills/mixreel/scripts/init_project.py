@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import re
+import sys
 
 SKILL = Path(__file__).resolve().parents[1]
 ENV = 'MIXREEL_PROJECTS_DIR'
@@ -17,9 +18,14 @@ DEFAULT = 'mixreel-projects'
 BRAND_FILES = {
     'brand-context.md': (
         '# Brand context\n\n'
-        'Product, audience, positioning, key messages, what each may claim and its source.\n\n'
-        '## Assets\n\n'
-        'List each file in `assets/` and what it may be used for.\n'),
+        '## Product\n\nWhat it is and what it does.\n\n'
+        '## What is actually different\n\nEach difference, with the screenshot or photo that shows it.\n\n'
+        '## Audience\n\nWho it is for, market, language, and the channels the ads run on.\n\n'
+        '## Key messages\n\nThe one or two things they most want people to know.\n\n'
+        '## Claims\n\n| Claim | Source | Conditions |\n| --- | --- | --- |\n\n'
+        '## Must not claim\n\n\n'
+        '## Assets\n\nEach file in `assets/`, what it may be used for, and where the real UI comes from. '
+        'Missing files stay listed as missing.\n'),
     'requirements.md': (
         '# Requirements\n\n'
         "The client's standing rules for deliverables: lengths, ratios, channels, logo placement, "
@@ -103,7 +109,9 @@ def main():
         result = initialize(args.brand, args.film, args.root)
     except (ValueError, OSError) as exc:
         parser.exit(1, f'Project initialization failed: {exc}\n')
-    print(json.dumps(result, indent=2))
+    # Show non-ASCII paths as written. A terminal that cannot encode them gets an escape, not a crash.
+    sys.stdout.reconfigure(errors='backslashreplace')
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
 if __name__ == '__main__':

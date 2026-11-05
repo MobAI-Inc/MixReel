@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 import shutil
+import sys
 import tempfile
 
 from check_package import MANIFEST, check_collection
@@ -69,7 +70,8 @@ def main():
         result = install(args.destination)
     except (ValueError, OSError) as exc:
         p.exit(1, str(exc) + '\n')
-    print(json.dumps(result, indent=2))
+    sys.stdout.reconfigure(errors='backslashreplace')
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -37,6 +38,29 @@ class CollectionTests(unittest.TestCase):
                              capture_output=True, text=True)
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertTrue((config / 'credentials.json').is_file())
+
+    def test_shipped_commands_do_not_assume_the_repository_layout(self):
+        # After installation there is no skills/ folder, so these paths would not exist.
+        stale = re.compile(r'(?<![\w<>/.-])skills/mixreel[\w-]*/')
+        hits = [str(p.relative_to(ROOT)) for p in (ROOT / 'skills').rglob('*.md') if stale.search(p.read_text())]
+        self.assertEqual(hits, [])
+
+    def test_shot_table_has_a_column_for_everything_the_storyboard_asks_for(self):
+        template = (ROOT / 'skills/mixreel-script/assets/SCRIPT.template.md').read_text()
+        header = next(line for line in template.splitlines() if line.startswith('| Id |'))
+        for column in ('Start state', 'Action', 'End state', 'Joins the next shot by',
+                       'On-screen copy', 'Spoken line', 'Sound'):
+            self.assertIn('| ' + column + ' |', header)
+
+    def test_each_project_file_has_a_stage_that_writes_or_reads_it(self):
+        stages = ['skills/mixreel-analyze/references/analysis.md',
+                  'skills/mixreel-script/references/audience-taste.md',
+                  'skills/mixreel-script/references/marketing-idea.md',
+                  'skills/mixreel-script/references/storyboard.md']
+        text = ''.join((ROOT / stage).read_text() for stage in stages)
+        for name in ('brand/competitors.md', 'brand/taste-library/', 'brand/audience-taste.md',
+                     'reference-sheet.jpg'):
+            self.assertIn(name, text)
 
     def test_existing_install_is_not_overwritten(self):
         install(self.dest)

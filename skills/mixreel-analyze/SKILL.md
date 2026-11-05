@@ -9,7 +9,7 @@ Pipeline stage 1. The map is [pipeline](../mixreel/references/pipeline.md). You 
 
 ## When
 
-Use this when the user supplies a reference video or a music track. If there is no reference, say so and stop. Do not invent timings.
+Use this when the user supplies a reference video or a music track. With no reference, this stage has nothing to do. Say so in one line and carry on with [script](../mixreel-script/SKILL.md), or with whatever else the user asked for. Skipping this stage does not end the job. Do not invent timings, and do not go looking for someone else's ad. If the user asked for nothing but an analysis and gave you no file, ask for the file.
 
 ## Output
 

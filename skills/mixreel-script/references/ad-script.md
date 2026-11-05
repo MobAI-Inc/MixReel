@@ -1,15 +1,6 @@
 # Advertising message, claims, and review
 
-Product facts come from the advertiser, never from this skill or from a reference video. They live in `brand/brand-context.md`.
-
-Include:
-
-- the product and what is actually different, with the screenshots that show it
-- audience, market, language, and channel
-- the message, what it claims, and what it must not claim
-- which brand assets exist, and where the real UI comes from
-
-Show that file to the user before you rely on it.
+Product facts come from the advertiser, never from this skill or from a reference video. They live in `brand/brand-context.md`. If that file is missing or still the starter text, [build it first](../../mixreel/references/project.md#build-the-brand-files), and show it to the user before you rely on it.
 
 ## This film
 

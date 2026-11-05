@@ -64,13 +64,21 @@ python3 scripts/demo.py
 python3 scripts/install.py --destination ~/.agents/skills
 ```
 
-安装器只复制文件，不覆盖已有目录，不读取密钥。你的 agent 如果从别的目录加载技能，把目标换成那个目录即可，例如 `.claude/skills` 或 `~/.codex/skills`。
+安装器只复制文件，不覆盖已有目录，不读取密钥。目标必须是 agent 读取技能的文件夹，项目里一个叫 `skills/` 的文件夹不算。
+
+| Agent | 只给一个项目 | 给所有项目 |
+| --- | --- | --- |
+| Claude Code | `/你的项目路径/.claude/skills` | `~/.claude/skills` |
+| Codex | 查你所用版本的文档 | `~/.codex/skills` |
+
+要写完整路径，写相对路径会装进这个克隆目录里。装完 agent 列不出 `mixreel` 技能的话，在那个文件夹里开一个新会话。
 
 ## 流程
 
 ```mermaid
 flowchart LR
-  A[分析参考广告] --> B[脚本和三维预演]
+  Z[品牌资料] --> A[分析参考广告，有才做]
+  A --> B[脚本和三维预演]
   B --> C[按供应商能力分组]
   C --> D[用你的素材做关键帧]
   D --> E[你的视频 API]
@@ -79,7 +87,12 @@ flowchart LR
   G --> H[审片]
 ```
 
-从 `skills/mixreel/SKILL.md` 进入。它按阶段打开文件，也可以单独调用其中一步。
+在你想放工作文件的文件夹里打开 agent，直接说要什么，做到哪一步都可以停。
+
+- `用 mixreel 给我的 App 建品牌资料`
+- `写一条 20 秒脚本`
+
+`mixreel` 技能一次带 agent 走一个阶段，也可以单独调用其中一步。这两句都不需要 API key。
 
 ## 它做哪几件事
 

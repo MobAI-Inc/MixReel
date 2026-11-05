@@ -1,6 +1,6 @@
 ---
 name: mixreel
-description: Route a product or ad video. Open the pipeline map first, then only the current stage. Stages stay in order and can also be invoked alone.
+description: Route a product or ad video, or build the brand files for a new brand. Open the pipeline map first, then only the current stage. Stages stay in order and can also be invoked alone.
 ---
 
 # MixReel
@@ -15,6 +15,7 @@ Open [the pipeline map](references/pipeline.md) and follow the row you are on. D
 
 | If you already know the stage | Open |
 | --- | --- |
+| Brand files only | [Build the brand files](references/project.md#build-the-brand-files) |
 | Reference analysis | [Analyze](../mixreel-analyze/SKILL.md) |
 | Script and previs | [Script](../mixreel-script/SKILL.md) |
 | Video plan | [Video plan](../mixreel-video-plan/SKILL.md) |
@@ -41,6 +42,6 @@ A host without skill dispatch opens the linked `SKILL.md` and follows it. An exi
 - [Frame reading](references/frame-reading.md) before you judge stills.
 - [Plan example](assets/plan.example.json) is a synthetic timing fixture, not a script the user must fill in.
 
-Resolve shared scripts from this installed directory. Keep project outputs outside the skill source. The default tools analyze media, fit beat grids, validate plans, render edits, check a finished edit, pack review frames, diff keyframe versions, journal spend, initialize blank configuration, redact exports, and wrap an app recording. None of them submits a paid model job. Optional CLIP, DINOv2, face match, SyncNet, and Gemini stay off until [review tools](../mixreel-review/references/review-tools.md) says the task may call them.
+Shared scripts are in `scripts/` next to this file, wherever it was installed. When a stage file writes `<mixreel>/scripts/...`, `<mixreel>` means this folder. Keep project outputs outside the skill source. The default tools analyze media, fit beat grids, validate plans, render edits, check a finished edit, pack review frames, diff keyframe versions, journal spend, initialize blank configuration, redact exports, and wrap an app recording. None of them submits a paid model job. Optional CLIP, DINOv2, face match, SyncNet, and Gemini stay off until [review tools](../mixreel-review/references/review-tools.md) says the task may call them.
 
 Finish only after you have inspected the requested artifact, reported anything untested, and reconciled any paid work.

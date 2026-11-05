@@ -17,11 +17,24 @@ A project holds one brand or client and outlives any film, task or session. Keep
   <film>/                 one per ad or film
     BRIEF.md
     script.md
-    reference-sheet.jpg
+    reference-sheet.jpg   real images labelled by shot, when the project has any
     plan.json, providers/, journal.json, media/, review.md   once production starts
 ```
 
 Every source file the brand supplies goes in `brand/assets/`, so each film takes its logo, packaging and UI from one place. `brand-context.md` lists what is there and what each file may be used for.
+
+Most of these files start empty, and that is normal for a first film. A file that stays empty is skipped, not guessed at.
+
+| File | Who fills it in | Who reads it | While it is empty |
+| --- | --- | --- | --- |
+| `brand-context.md` | [Build the brand files](#build-the-brand-files) | Script step 1, and any stage showing the product | Build it before writing a script |
+| `requirements.md` | Any stage, when the client states a standing rule | Every stage | There are no standing rules |
+| `audience-taste.md` | Script step 2, then step 7 once the user approves or rejects a script | Script steps 2 and 3 | Work from the brand context and the user |
+| `competitors.md` | Analyze, when the ad is a competitor's. Only what you watched or the user reported | Script steps 2 and 3 | Skip it. Research competitors only when asked |
+| `films.md` | Script step 7 | Script step 3 | This is the first film |
+| `taste-library/` | Analyze, when the user wants an ad kept for this brand. One folder per ad, with the analysis note and contact sheet | Script steps 3 and 4 | Skip it |
+| `assets/` | Build the brand files, or any stage when the user supplies a file | Script, Keyframes, Produce | List what is missing in the script |
+| `reference-sheet.jpg` | Script step 5, when the project has images for these shots | The user reading the script, and Keyframes for finding the real files | Skip it |
 
 ## Where it lives
 
@@ -36,11 +49,27 @@ Projects sit in one projects directory, one folder per brand. The same rule hold
 ## Find it before you work
 
 1. Use the folder the user or the host names. Otherwise look in the working directory, its parents and the projects directory above for a `brand/` folder or a folder named for the brand, including folders the user keeps under other names. Map those, and do not copy them.
-2. When you find one, use it and say which. When there is none, create it with `python3 skills/mixreel/scripts/init_project.py --brand "<brand>"`, resolved from the installed directory, and say where. Add `--film <film>` to create the film folder with its brief. The script never overwrites a file and makes no network request.
+2. When you find one, use it and say which. When there is none, create it with `python3 <mixreel>/scripts/init_project.py --brand "<brand>"` and say where. `<mixreel>` is the installed `mixreel` skill folder, the parent of this `references` folder. Replace it with the real path, and run the command from the folder the user is working in. Add `--film <film>` to create the film folder with its brief. The script never overwrites a file and makes no network request.
 3. A task, thread or session folder is not a project. If the host wants a separate folder per task, that folder is the film's, inside the project. Never start a second brand layer for a brand that already has one.
 4. If this storage will not outlast the session, or other agents working for this user cannot read it, tell the user. The next film would start from nothing.
 
 A one-off with no brand, such as a single illustration or a film with no advertising, keeps its own folder and needs no brand layer.
+
+## Build the brand files
+
+This is row 0 on [the pipeline map](pipeline.md). Do it when the user asks for brand files, and before a first script when `brand/brand-context.md` is still the starter text. It needs no film folder, no reference video and no API key.
+
+1. Ask for the brand name if you do not have it, then find or create the project as above.
+2. Ask for whatever the user has not already given you, all in one message and in everyday words.
+   - the product's name and what it does
+   - what is actually different about it, and a screenshot or photo that shows it
+   - who it is for, in which market and language, and where the ads will run
+   - the one or two things they most want people to know
+   - what must not be claimed, and the source of any price, "free", guarantee or result they want to state
+   - the logo, packaging, photos, screenshots and recordings they have
+3. Write the answers into `brand/brand-context.md` under its headings. A page or document the user points you at can fill a heading when you name it as the source. An answer nobody has stays marked `unknown`. Do not fill a gap from general knowledge or from someone else's ad.
+4. Copy each file they supply into `brand/assets/` and list it with what it may be used for. Put any standing rules they mention in `brand/requirements.md`.
+5. Show them `brand/brand-context.md` and write their corrections back. If brand files were all they asked for, stop here and say that a script is the usual next step.
 
 ## Read what this stage needs
 

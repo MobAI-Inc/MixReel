@@ -60,6 +60,24 @@ class ProjectTests(unittest.TestCase):
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertEqual(json.loads(run.stdout)['project'], str(self.base / 'mixreel-projects/kite'))
 
+    def run_with_encoding(self, encoding):
+        return subprocess.run([sys.executable, str(SCRIPT), '--brand', '月光笔记', '--film', '第一条'],
+                              cwd=self.base, capture_output=True,
+                              env={'PATH': '/usr/bin:/bin', 'PYTHONIOENCODING': encoding})
+
+    def test_chinese_paths_print_as_written(self):
+        run = self.run_with_encoding('utf-8')
+        self.assertEqual(run.returncode, 0, run.stderr)
+        text = run.stdout.decode('utf-8')
+        self.assertIn('月光笔记', text)
+        self.assertNotIn('\\u', text)
+        self.assertEqual(json.loads(text)['project'], str(self.base / 'mixreel-projects/月光笔记'))
+
+    def test_terminal_without_that_encoding_does_not_crash(self):
+        run = self.run_with_encoding('ascii')
+        self.assertEqual(run.returncode, 0, run.stderr)
+        self.assertEqual(json.loads(run.stdout)['project'], str(self.base / 'mixreel-projects/月光笔记'))
+
 
 if __name__ == '__main__':
     unittest.main()

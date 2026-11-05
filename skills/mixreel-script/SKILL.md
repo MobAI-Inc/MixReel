@@ -9,21 +9,23 @@ Pipeline stage 2. The map is [pipeline](../mixreel/references/pipeline.md). Deli
 
 ## Steps
 
-Open only the file for the step you are on.
+Open only the file for the step you are on. Before step 1, make the film's folder with `--film` as [project](../mixreel/references/project.md) describes, picking a short name yourself if the user gave none, and start its `BRIEF.md`.
+
+A request as short as "write a 20-second script" is enough to start. Fill the brief from the request and the brand files, mark the rest `unknown`, and ask only when the answer would change the script. The stop point is the script unless the user asked for more.
 
 | Step | Open |
 | --- | --- |
 | 1. Facts and claims | [Ad script](references/ad-script.md) |
 | 2. What the viewer wants | [Audience](references/audience-taste.md) |
 | 3. The idea | [Marketing idea](references/marketing-idea.md) |
-| 4. Borrow structure only | [Adaptation](references/adaptation.md) |
+| 4. Borrow structure only, when there is a reference | [Adaptation](references/adaptation.md) |
 | 5. Shot list | [Storyboard](references/storyboard.md) and [the template](assets/SCRIPT.template.md) |
 | 6. Previs, if blocking needs it | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
-| 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. |
+| 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. When the user approves or rejects the script, update its row and record the reason in `brand/audience-taste.md`. |
 
 ## Output
 
-`script.md` from the template. A complete script has shot ids, scale, action, on-screen copy, and sound. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
+`script.md` from the template, and `reference-sheet.jpg` when the project has images for its shots. A complete script fills every column of its shot table. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
 
 An outline may leave production fields pending. Do not invent provider settings or prices to satisfy a validator.
 

@@ -1,10 +1,11 @@
 # Pipeline map
 
-Read this when you are choosing where to work. Then open only that stage's `SKILL.md`.
+Read this when you are choosing where to work. Then open only that row's file.
 
 | Order | Stage | Open | Stop when you have |
 | --- | --- | --- | --- |
-| 1 | Reference analysis | [Analyze](../../mixreel-analyze/SKILL.md) | `reference-analysis.md` |
+| 0 | Brand files, once per brand | [Build the brand files](project.md#build-the-brand-files) | `brand/brand-context.md` the user has read |
+| 1 | Reference analysis, when the user supplied a reference | [Analyze](../../mixreel-analyze/SKILL.md) | `reference-analysis.md` |
 | 2 | Script and previs | [Script](../../mixreel-script/SKILL.md) | `script.md`, and previs stills when the blocking needs them |
 | 3 | Video plan, before images | [Video plan](../../mixreel-video-plan/SKILL.md) | groups, frame needs, continuations |
 | 4 | Keyframes | [Keyframes](../../mixreel-keyframes/SKILL.md) | accepted images and the input manifest |
@@ -12,7 +13,7 @@ Read this when you are choosing where to work. Then open only that stage's `SKIL
 | 6 | Clips and the edit | [Produce](../../mixreel-produce/SKILL.md) | the assembled master |
 | 7 | QA and review | [Review](../../mixreel-review/SKILL.md) | `review.md`, then the one stage a finding names |
 
-An existing adequate artifact can satisfy an input. Stop at the deliverable the user asked for. Do not submit clips on placeholder prompts.
+A row with nothing to work on is skipped, and the job carries on at the next row. With no reference video or track, for example, go straight to the script. An existing adequate artifact can satisfy an input. Stop at the deliverable the user asked for. Do not submit clips on placeholder prompts.
 
 ## One file per shared rule
 

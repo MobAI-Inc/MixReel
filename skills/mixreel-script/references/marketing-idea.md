@@ -1,6 +1,6 @@
 # The idea
 
-Before writing, read `brand/films.md`, the scripts the user has approved and the approaches they have rejected.
+Before writing, read `brand/films.md`, and the approved scripts and rejected approaches in `brand/audience-taste.md`. Ads in `brand/competitors.md` and `brand/taste-library/` show which forms this viewer already knows. Any of these may be empty.
 
 Pick one idea that makes the message visible. Write it as an event a camera can shoot: a hand, a product, a screen, a result. The idea is not a slogan glued on at the end.
 
@@ -12,6 +12,14 @@ For the idea, record:
 - why this viewer would recognize the form
 - what you are not showing
 
-Fill the idea section of [the script template](../assets/SCRIPT.template.md). If the user asked for alternatives, give more than one event, not more than one adjective list. Stop for approval before the shot list becomes final.
+Fill the idea section of [the script template](../assets/SCRIPT.template.md).
+
+## When to pause
+
+A user who asks for a script gets the whole script in one delivery, with the idea and the shot list together and marked as a draft. Do not stop between them. Asking for a script hands you the choice of idea for this draft. The user approves or rejects it when they read the result, and changing the idea means rewriting the shot list.
+
+Stop at the idea only when the user asked to see ideas or alternatives first. Give more than one event, not more than one adjective list, wait for their pick, then write the shot list for that one.
+
+Either way the approval that must come before any illustration is approval of the finished script.
 
 Rejected directions stay rejected. Do not revive one by changing the caption.
