@@ -23,7 +23,7 @@ Open only the file for the step you are on.
 
 ## Output
 
-`script.md` from the template. A complete script has shot ids, scale, action, on-screen copy, and sound. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
+`script.md` from the template. A complete script fills every column of its shot table. Blocking detail is required when you build a previs, and optional when the shot is a locked-off product or a supplied recording.
 
 An outline may leave production fields pending. Do not invent provider settings or prices to satisfy a validator.
 

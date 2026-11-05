@@ -10,9 +10,9 @@ The one message, the claim source, and the conditions that must stay visible.
 
 ## Shots
 
-| Id | In-out | Scale | Action and end state | On-screen copy | Sound |
-| --- | --- | --- | --- | --- | --- |
-| S01 | 0.0– |  |  |  |  |
+| Id | In-out | Scale | Start state | Action | End state | Joins the next shot by | On-screen copy | Spoken line | Sound |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| S01 | 0.0– |  |  |  |  |  |  |  |  |
 
 ## Assets
 

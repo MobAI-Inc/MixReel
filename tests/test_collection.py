@@ -45,6 +45,13 @@ class CollectionTests(unittest.TestCase):
         hits = [str(p.relative_to(ROOT)) for p in (ROOT / 'skills').rglob('*.md') if stale.search(p.read_text())]
         self.assertEqual(hits, [])
 
+    def test_shot_table_has_a_column_for_everything_the_storyboard_asks_for(self):
+        template = (ROOT / 'skills/mixreel-script/assets/SCRIPT.template.md').read_text()
+        header = next(line for line in template.splitlines() if line.startswith('| Id |'))
+        for column in ('Start state', 'Action', 'End state', 'Joins the next shot by',
+                       'On-screen copy', 'Spoken line', 'Sound'):
+            self.assertIn('| ' + column + ' |', header)
+
     def test_existing_install_is_not_overwritten(self):
         install(self.dest)
         entry = self.dest / 'mixreel-script/SKILL.md'

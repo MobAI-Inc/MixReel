@@ -1,6 +1,6 @@
 # Shot list
 
-Each shot needs an id, a scale, the action, the on-screen copy, and the sound. Write the start state and the end state. Say how it joins the next shot.
+Fill every column of the shot table in [the template](../assets/SCRIPT.template.md). Write `none` where a shot has no copy or no spoken line, so a blank never means undecided.
 
 When a previs is used, also write positions and facing so the scene file can be built. A locked-off pack shot or a supplied screen recording does not need a walking path.
 
