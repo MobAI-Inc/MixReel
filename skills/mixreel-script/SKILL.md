@@ -16,7 +16,7 @@ Open only the file for the step you are on.
 | 1. Facts and claims | [Ad script](references/ad-script.md) |
 | 2. What the viewer wants | [Audience](references/audience-taste.md) |
 | 3. The idea | [Marketing idea](references/marketing-idea.md) |
-| 4. Borrow structure only | [Adaptation](references/adaptation.md) |
+| 4. Borrow structure only, when there is a reference | [Adaptation](references/adaptation.md) |
 | 5. Shot list | [Storyboard](references/storyboard.md) and [the template](assets/SCRIPT.template.md) |
 | 6. Previs, if blocking needs it | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
 | 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. |
