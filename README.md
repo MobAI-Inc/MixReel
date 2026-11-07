@@ -1,8 +1,10 @@
 # MixReel
 
+<h3 align="center">Build a growth marketing agent that knows your product.</h3>
+
 <p align="center"><a href="#showcase"><b>Showcase</b></a> &nbsp;&bull;&nbsp; <a href="#quickstart"><b>Quickstart</b></a> &nbsp;&bull;&nbsp; <a href="docs/getting-started.md"><b>Getting started</b></a> &nbsp;&bull;&nbsp; <a href="README.zh-CN.md"><b>简体中文</b></a></p>
 
-Block the shot in 3D before you pay for a generation. Then let the cut tell you when a frame flashed, a cut landed late, or the package stopped matching the real product.
+We don't believe in one-click cloning or one-click generation. A viral structure can be borrowed, yet every product has its own selling point and audience. MixReel walks you through building your product's marketing knowledge base. It turns your product facts and marketing assets into something an agent can read, and searches for the competitors and winning ads that matter to you. From there it brainstorms scripts with you, blocks every shot in a Blender 3D director's board, and only then generates the film. Starting from an empty folder, its first films already hold up. The more complete the knowledge base, the better it knows your product, and the better the films get.
 
 MixReel is an open-source agent skill for **ad, e-commerce, and product short videos**. It runs locally. You bring the model, on that vendor's own API, with your own key. This repository does not host a relay and does not lock you to one model.
 
