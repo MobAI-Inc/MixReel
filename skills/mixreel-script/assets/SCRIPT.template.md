@@ -2,7 +2,7 @@
 
 ## Idea
 
-One event. Opening image, turn, last image, copy on the last image. What this film refuses to show.
+One event. The theme, as [the idea](../references/marketing-idea.md) describes it, and the moment it borrows from. Opening image, turn, last image, copy on the last image. What this film refuses to show.
 
 ## Message
 
