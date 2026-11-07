@@ -1,0 +1,6 @@
+interface:
+  display_name: "Produce"
+  short_description: "Submit authorized clips, recover jobs, and export the cut"
+  default_prompt: "Use $mixreel-produce for the authorized edit. Do not submit a paid job without a reservation and a task id."
+policy:
+  allow_implicit_invocation: true

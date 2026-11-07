@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "duration": 6.0,
+  "fps": 24,
+  "illustration_count": 2,
+  "music": {
+    "asset": "music.wav",
+    "duration": 12.0,
+    "offset": 0.0,
+    "events": [
+      {"id": "down", "time": 3.0, "kind": "accent"}
+    ]
+  },
+  "references": [],
+  "reviews": {"storyboard": "pending", "style": "pending", "keyframes": "pending"},
+  "shots": [
+    {
+      "id": "orbit",
+      "start": 0.0,
+      "end": 3.0,
+      "function": "Orbit the bottle so the label reads.",
+      "source_evidence": "Previs orbit. Replace the clip with the approved generation.",
+      "keyframe_design": "One still of the bottle, three-quarter, label visible.",
+      "description": "Camera arcs left to right. The bottle stays centered. No generated logo.",
+      "opening": "Label in profile.",
+      "ending": "Label square to camera.",
+      "camera": {"behavior": "arc_right", "start": "Three-quarter", "end": "Front"},
+      "bindings": [],
+      "keyframes": ["bottle-front"],
+      "music_event": null,
+      "transition": {"type": "cut", "duration": 0},
+      "clip": {"asset": "orbit.mp4", "in": 0, "duration": 3, "speed": 1}
+    },
+    {
+      "id": "set-down",
+      "start": 3.0,
+      "end": 6.0,
+      "function": "A hand sets the bottle on the table on the beat.",
+      "source_evidence": "Previs handoff. The label overlay is a real asset.",
+      "keyframe_design": "Hand and bottle at the table, label left for the overlay.",
+      "description": "Hand enters, places the bottle, and leaves. Cut on the accent.",
+      "opening": "Empty table.",
+      "ending": "Bottle still, label clear.",
+      "camera": {"behavior": "fixed", "start": "Table", "end": "Table"},
+      "bindings": [],
+      "keyframes": ["bottle-table"],
+      "music_event": "down",
+      "transition": {"type": "cut", "duration": 0},
+      "clip": {"asset": "setdown.mp4", "in": 0, "duration": 3, "speed": 1}
+    }
+  ]
+}

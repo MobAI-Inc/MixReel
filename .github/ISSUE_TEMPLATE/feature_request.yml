@@ -1,0 +1,19 @@
+name: Feature request
+description: A change to the skills, the QA checks, previs, or a provider adapter
+title: ""
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: The ad or product-video job this would make easier.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What the skill or tool should do. A new provider should call that vendor's official API with the user's key.
+    validations:
+      required: true

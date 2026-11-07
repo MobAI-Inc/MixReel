@@ -1,0 +1,6 @@
+interface:
+  display_name: "MixReel"
+  short_description: "Route a product ad from analysis through the cut and QA"
+  default_prompt: "Use $mixreel for this request. Keep accepted decisions and stay inside the authorized step."
+policy:
+  allow_implicit_invocation: true
