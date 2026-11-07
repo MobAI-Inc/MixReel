@@ -1,5 +1,7 @@
 # MixReel
 
+<p align="center"><a href="#showcase"><b>Showcase</b></a> &nbsp;&bull;&nbsp; <a href="#quickstart"><b>Quickstart</b></a> &nbsp;&bull;&nbsp; <a href="docs/getting-started.md"><b>Getting started</b></a> &nbsp;&bull;&nbsp; <a href="README.zh-CN.md"><b>简体中文</b></a></p>
+
 Block the shot in 3D before you pay for a generation. Then let the cut tell you when a frame flashed, a cut landed late, or the package stopped matching the real product.
 
 MixReel is an open-source agent skill for **ad, e-commerce, and product short videos**. It runs locally. You bring the model, on that vendor's own API, with your own key. This repository does not host a relay and does not lock you to one model.
@@ -11,7 +13,70 @@ MixReel is an open-source agent skill for **ad, e-commerce, and product short vi
   <img src="docs/assets/hero.png" alt="MixReel: a grey 3D previs of a handbag next to the finished bordeaux leather frame, a film strip, a beat-marked waveform, and review checks" width="1000">
 </p>
 
-Coming soon. Finished films will land in the demo slots below. The quickstart still runs with no API key.
+## Showcase
+
+Six ads for three real brands, each made from an empty folder by a coding agent running MixReel. Every brand gets one performance ad and one creator-style or brand film, so you can see the same product told two ways. Each film is shown as the agent delivered it, with no manual edit or retouch, small flaws included.
+
+### Genshin Impact · Douyin, Chinese
+
+[Script, shot list and production notes](examples/showcase/genshin-impact/README.md)
+
+<table>
+  <tr>
+    <th width="50%">Performance ad</th>
+    <th width="50%">Brand film</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/305adf51-c6b3-4712-ae3f-545e185dd965" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/47e622dd-d435-4dc1-9788-195833cc6333" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>"Finally in on it"</b>, 37 s. At lunch a coworker pitches the 7.2 new-player offer, pick one standard five-star, to the quiet guy who never joins in. Two old players replay a cutscene, and he finishes the line. He started playing a while back.</p><p>Built from the offer text on the official site, and the line from the official 7.2 trailer, checked for who says it.</p><p>Generation cost <b>$6.60</b></p></td>
+    <td valign="top"><p><b>"This table of people"</b>, 44 s. On the night of the 7.2 update a six-year player tears up. His girlfriend asks if he is not bored of it. He turns the phone around to show the Seven Nations round table and says he met every one of them over those six years.</p><p>Built from official trailer footage and key art. The game's characters are never drawn by a model.</p><p>Generation cost <b>$4.79</b></p></td>
+  </tr>
+</table>
+
+### Myfoodie cat food · Douyin, Chinese
+
+[Script, shot list and production notes](examples/showcase/myfoodie/README.md)
+
+<table>
+  <tr>
+    <th width="50%">Performance ad</th>
+    <th width="50%">Creator ad</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/ea549b62-cab7-4150-b72c-fe26b10e4085" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2be40599-ab40-4324-a337-3f1347ffd823" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>"Hunting mode"</b>, 19 s. A tabby stalks its dinner bowl like prey and pounces. The offer card lands about six seconds in, and the one claim is the line printed on the pack, "≥80% meat, bone and organs".</p><p>The pack is the official photo, composited, with every word read off the real pack.</p><p>Generation cost <b>$6.43</b></p></td>
+    <td valign="top"><p><b>"She can hunt now"</b>, 53 s. The cat is sure its owner cannot hunt and leaves toy mice on her pillow every morning. She carries home a box. The cat inspects the bag, reads "meat, bone, organs", and accepts her. That night it still leaves one mouse, just in case.</p><p>It uses the same pack photo and one shared cat, so both films star the same tabby.</p><p>Generation cost <b>$8.96</b></p></td>
+  </tr>
+</table>
+
+### Tipsy Chat · Meta, English
+
+[Script, shot list and production notes](examples/showcase/tipsy-chat/README.md)
+
+<table>
+  <tr>
+    <th width="50%">Performance ad</th>
+    <th width="50%">Creator ad</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/af948568-ab5f-43c5-a32d-55706ea14d9d" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2c0918ce-b603-4401-a200-45f17e74e711" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>"Ch 47 coming soon"</b>, 23 s. At 1 a.m. she refreshes a story that stopped updating in 2021. She opens Tipsy, writes the next line herself, and the story answers.</p><p>The app screens are real Tipsy UI frames from the app's own ads, with private text blurred.</p><p>Generation cost <b>$2.15</b></p></td>
+    <td valign="top"><p><b>"Who is Biscuit"</b>, 41 s. Her roommate has a secret boyfriend, or so she thinks. She opens the door on a cowboy from a Wild West story, calling from the phone. By the end she is on the bed asking what her own horse is called.</p><p>The call screen is the real Tipsy one. Every line is spoken by the video model.</p><p>Generation cost <b>$8.15</b></p></td>
+  </tr>
+</table>
+
+**How they were made.** For each brand the agent built the brand files from public sources, then wrote the script from the brand's own selling point. Scenes with more than one shot were blocked in Blender first. Faces came from Midjourney and were completed with GPT Image. Shots and spoken lines came from MiniMax H3, mostly H3 Max Turbo at 1080p. Logos, packs and app screens were composited from the real assets, and the cut went through MixReel's QA plus a Gemini listening pass. Total generation cost for the six cuts was $37.08.
+
+These are unofficial concept ads made to show the workflow. They are not affiliated with or endorsed by miHoYo, Myfoodie or Tipsy Chat. Characters, marks, packaging and app UI belong to their owners and are not covered by this repository's license.
 
 ## Four things MixReel does
 
@@ -113,9 +178,9 @@ The `mixreel` skill routes the agent to one stage at a time. Stages can also be 
 
 **Real marks.** Logos, packaging text, product copy, and app UI are composited from the asset you supply. The skills do not ask a model to invent them.
 
-## Demos
+## Example slots
 
-The films are not in the repository yet. The slots are.
+These slots use invented brands and are still being filled. The finished films are in the [showcase](#showcase) above.
 
 | Slot | What it will show | Now |
 | --- | --- | --- |

@@ -1,5 +1,7 @@
 # MixReel
 
+<p align="center"><a href="#案例"><b>案例</b></a> &nbsp;&bull;&nbsp; <a href="#快速开始"><b>快速开始</b></a> &nbsp;&bull;&nbsp; <a href="docs/getting-started.md"><b>入门说明</b></a> &nbsp;&bull;&nbsp; <a href="README.md"><b>English</b></a></p>
+
 先在三维里把镜头摆对，再花钱生成。成片自己会标出闪帧、切晚了的剪辑点，以及包装和真实商品对不上的地方。
 
 MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent skill。它在你的机器上运行。模型用你自己的账号，走该厂商的官方 API。这个仓库不提供中转，也不把你绑在某一个模型上。
@@ -11,7 +13,70 @@ MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent s
   <img src="docs/assets/hero.png" alt="MixReel 主视觉：手袋的灰模三维预演与酒红皮革成片对照，胶片条、标出节拍的波形和审片检查项" width="1000">
 </p>
 
-即将推出。成片会放进下面的案例位。不需要密钥的快速体验现在就能跑。
+## 案例
+
+三个真实品牌，六条广告，每条都是 coding agent 用 MixReel 从一个空文件夹做出来的。每个品牌各做一条竞价素材，再做一条达人素材或品牌片，同一个产品讲成两种片子。成片按 agent 交付时的样子放出，没有人手动剪辑或修图，小瑕疵也留着。
+
+### 原神 · 抖音，中文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/genshin-impact/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">品牌片</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/305adf51-c6b3-4712-ae3f-545e185dd965" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/47e622dd-d435-4dc1-9788-195833cc6333" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「插上话了」</b>，37 秒。午饭时同事又劝闷头吃饭的那位入坑，说 7.2 新号能自选一名常驻五星。两个老玩家凑着看剧情片段，他突然接上了那句台词，原来他早就偷偷入坑了。</p><p>新手福利照抄官网公告原文，手机里那句台词取自官方 7.2 PV，核对过是谁说的。</p><p>生成费用 <b>6.60 美元</b></p></td>
+    <td valign="top"><p><b>「这一桌人」</b>，44 秒。7.2 更新那晚，玩了六年的男生看主线红了眼。女朋友问他不腻吗，他把手机转过去，屏幕上是七国代表围坐的圆桌，他说这一桌人是他这六年一个一个认识的。</p><p>画面用的是官方 PV 片段和官方美术图，游戏角色一律不让模型画。</p><p>生成费用 <b>4.79 美元</b></p></td>
+  </tr>
+</table>
+
+### 麦富迪猫粮 · 抖音，中文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/myfoodie/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">达人素材</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/ea549b62-cab7-4150-b72c-fe26b10e4085" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2be40599-ab40-4324-a337-3f1347ffd823" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「狩猎模式」</b>，19 秒。狸花猫把饭碗当猎物，伏低、扭屁股、扑上去。第 6 秒左右出优惠卡，唯一的卖点是包装上印着的「≥80% 肉/骨/内脏」。</p><p>包装是官方原图合成进画面，包装上的字逐个对过原图。</p><p>生成费用 <b>6.43 美元</b></p></td>
+    <td valign="top"><p><b>「她会打猎了」</b>，53 秒。猫认定主人不会打猎，天天往她枕边放玩具老鼠。这天她抱回一个箱子，猫验货，一字一字念出「肉。骨。内脏。」，认了她。夜里它还是又放了一只老鼠，保险起见。</p><p>用的是同一张官方包装图，两条片子用的是同一只猫。</p><p>生成费用 <b>8.96 美元</b></p></td>
+  </tr>
+</table>
+
+### Tipsy Chat · Meta，英文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/tipsy-chat/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">达人素材</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/af948568-ab5f-43c5-a32d-55706ea14d9d" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2c0918ce-b603-4401-a200-45f17e74e711" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「Ch 47 coming soon」</b>，23 秒。凌晨一点，她又刷新了一篇 2021 年就停更的同人文。她打开 Tipsy 自己往下写，故事回了她下一段。</p><p>界面取自 Tipsy 自家广告里的真实画面，隐私文字打了码。</p><p>生成费用 <b>2.15 美元</b></p></td>
+    <td valign="top"><p><b>「Who is Biscuit」</b>，41 秒。她以为室友藏了个男朋友，推门才发现是 Tipsy 里西部故事的牛仔在打电话。到最后她自己也趴到床上，问自己那匹马叫什么。</p><p>通话界面是 Tipsy 的真实画面，所有台词都由视频模型说出来。</p><p>生成费用 <b>8.15 美元</b></p></td>
+  </tr>
+</table>
+
+**怎么做的。** 每个品牌都是 agent 先从公开资料建好品牌文件，再从品牌自己的卖点写脚本。多镜头的场景先在 Blender 里排好机位。真人的脸用 Midjourney 生成，再交给 GPT Image 补全。镜头和台词由 MiniMax H3 生成，大部分用的是 1080p 的 H3 Max Turbo。logo、包装和 App 界面用真实素材合成，成片过一遍 MixReel 的自动审片，再让 Gemini 听一遍声音。六条成片的生成费用一共 37.08 美元。
+
+以上都是为展示工作流制作的非官方概念片，与米哈游、麦富迪、Tipsy Chat 没有合作，也未获授权。角色、商标、包装和 App 界面归各自权利人所有，不在本仓库的许可证范围内。
 
 ## 四个特色
 
@@ -113,9 +178,9 @@ flowchart LR
 
 **品牌用真素材。** 标志、包装文字、商品文案和 App 界面用你提供的文件叠上去，不让模型现画。
 
-## 案例位
+## 示例位
 
-成片还没有放进仓库。位置已经留好。
+这些位置用的是虚构品牌，还在补。做好的成片在上面的[案例](#案例)里。
 
 | 位置 | 将来放什么 | 现在 |
 | --- | --- | --- |

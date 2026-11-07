@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- README showcase: six unofficial concept ads for three real brands, a performance ad and a creator ad or brand film for each, with per-brand production notes in `examples/showcase/`.
+
 ## 0.0.1
 
 First release of MixReel, for ad, e-commerce, and product short videos.
