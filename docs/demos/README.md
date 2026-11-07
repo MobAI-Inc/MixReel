@@ -13,3 +13,7 @@ These files are placeholders. Do not commit a customer recording, a third-party 
 When a film lands, add a one-line note of the official model id used and the duration. Do not add a price from an internal run. Do not add a person's name.
 
 Suggested invented brands already used in the examples: **Kite Pantry** (a bottled oil) and **Paperlane** (a notes app). Replace them if the real shoot uses something else you can show.
+
+## Showcase films
+
+The six films in the README showcase are a separate set. They are unofficial concept ads for real brands, made to show the workflow, and their notes are in `examples/showcase/`. The video files are hosted as GitHub attachments and are not committed to this repository, so they stay outside its license. Their costs are the generation charges at the model vendors' list prices for the cut that shipped.

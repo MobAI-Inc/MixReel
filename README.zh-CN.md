@@ -1,5 +1,7 @@
 # MixReel
 
+<p align="center"><a href="#案例"><b>案例</b></a> &nbsp;&bull;&nbsp; <a href="#快速开始"><b>快速开始</b></a> &nbsp;&bull;&nbsp; <a href="docs/getting-started.md"><b>入门说明</b></a> &nbsp;&bull;&nbsp; <a href="README.md"><b>English</b></a></p>
+
 先在三维里把镜头摆对，再花钱生成。成片自己会标出闪帧、切晚了的剪辑点，以及包装和真实商品对不上的地方。
 
 MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent skill。它在你的机器上运行。模型用你自己的账号，走该厂商的官方 API。这个仓库不提供中转，也不把你绑在某一个模型上。
@@ -8,31 +10,92 @@ MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent s
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 <p align="center">
-  <img src="docs/assets/hero.png" alt="MixReel 主视觉：手袋的灰模三维预演与酒红皮革成片对照，胶片条、标出节拍的波形和审片检查项" width="1000">
+  <img src="docs/assets/hero.png" alt="六条案例成片各取一帧，下面标着品牌、广告类型和生成费用" width="1000">
 </p>
 
-即将推出。成片会放进下面的案例位。不需要密钥的快速体验现在就能跑。
+## 案例
+
+三个真实品牌，六条广告，每条都是 coding agent 用 MixReel 从一个空文件夹做出来的。每个品牌各做一条竞价素材，再做一条达人素材或品牌片，同一个产品讲成两种片子。成片按 agent 交付时的样子放出，没有人手动剪辑或修图，小瑕疵也留着。
+
+### 原神 · 抖音，中文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/genshin-impact/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">品牌片</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/305adf51-c6b3-4712-ae3f-545e185dd965" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/47e622dd-d435-4dc1-9788-195833cc6333" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「插上话了」</b>，37 秒。午饭时同事又劝闷头吃饭的那位入坑，说 7.2 新号能自选一名常驻五星。两个老玩家凑着看剧情片段，他突然接上了那句台词，原来他早就偷偷入坑了。</p><p>新手福利照抄官网公告原文，手机里那句台词取自官方 7.2 PV，核对过是谁说的。</p><p>生成费用 <b>6.60 美元</b></p></td>
+    <td valign="top"><p><b>「这一桌人」</b>，44 秒。7.2 更新那晚，玩了六年的男生看主线红了眼。女朋友问他不腻吗，他把手机转过去，屏幕上是七国代表围坐的圆桌，他说这一桌人是他这六年一个一个认识的。</p><p>画面用的是官方 PV 片段和官方美术图，游戏角色一律不让模型画。</p><p>生成费用 <b>4.79 美元</b></p></td>
+  </tr>
+</table>
+
+### 麦富迪猫粮 · 抖音，中文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/myfoodie/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">达人素材</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/ea549b62-cab7-4150-b72c-fe26b10e4085" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2be40599-ab40-4324-a337-3f1347ffd823" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「狩猎模式」</b>，19 秒。狸花猫把饭碗当猎物，伏低、扭屁股、扑上去。第 6 秒左右出优惠卡，唯一的卖点是包装上印着的「≥80% 肉/骨/内脏」。</p><p>包装是官方原图合成进画面，包装上的字逐个对过原图。</p><p>生成费用 <b>6.43 美元</b></p></td>
+    <td valign="top"><p><b>「她会打猎了」</b>，53 秒。猫认定主人不会打猎，天天往她枕边放玩具老鼠。这天她抱回一个箱子，猫验货，一字一字念出「肉。骨。内脏。」，认了她。夜里它还是又放了一只老鼠，保险起见。</p><p>用的是同一张官方包装图，两条片子用的是同一只猫。</p><p>生成费用 <b>8.96 美元</b></p></td>
+  </tr>
+</table>
+
+### Tipsy Chat · Meta，英文
+
+[脚本、分镜和制作说明（英文）](examples/showcase/tipsy-chat/README.md)
+
+<table>
+  <tr>
+    <th width="50%">竞价素材</th>
+    <th width="50%">达人素材</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/af948568-ab5f-43c5-a32d-55706ea14d9d" controls muted></video></td>
+    <td><video src="https://github.com/user-attachments/assets/2c0918ce-b603-4401-a200-45f17e74e711" controls muted></video></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><b>「Ch 47 coming soon」</b>，23 秒。凌晨一点，她又刷新了一篇 2021 年就停更的同人文。她打开 Tipsy 自己往下写，故事回了她下一段。</p><p>界面取自 Tipsy 自家广告里的真实画面，隐私文字打了码。</p><p>生成费用 <b>2.15 美元</b></p></td>
+    <td valign="top"><p><b>「Who is Biscuit」</b>，41 秒。她以为室友藏了个男朋友，推门才发现是 Tipsy 里西部故事的牛仔在打电话。到最后她自己也趴到床上，问自己那匹马叫什么。</p><p>通话界面是 Tipsy 的真实画面，所有台词都由视频模型说出来。</p><p>生成费用 <b>8.15 美元</b></p></td>
+  </tr>
+</table>
+
+**怎么做的。** 每个品牌都是 agent 先从公开资料建好品牌文件，再从品牌自己的卖点写脚本。多镜头的场景先在 Blender 里排好机位。真人的脸用 Midjourney 生成，再交给 GPT Image 补全。镜头和台词由 MiniMax H3 生成，大部分用的是 1080p 的 H3 Max Turbo。logo、包装和 App 界面用真实素材合成，成片过一遍 MixReel 的自动审片，再让 Gemini 听一遍声音。六条成片的生成费用一共 37.08 美元。
+
+以上都是为展示工作流制作的非官方概念片，与米哈游、麦富迪、Tipsy Chat 没有合作，也未获授权。角色、商标、包装和 App 界面归各自权利人所有，不在本仓库的许可证范围内。
 
 ## 四个特色
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-previs.png" alt="三维预演：俯视图上的两个机位、香水瓶的灰模首尾帧，以及同样两个角度的琥珀色成片">
+<img src="docs/assets/feature-previs.png" alt="麦富迪竞价片里的两个镜头，左边是 Blender 灰模预演，右边是对应的成片画面">
 <p><b>1. 先三维预演，再花钱生成。</b>机位、焦段和运镜先在 Blender（或内置的纯 Python 后端）里摆好。从灰模到成片，产品形状和机位都对得上。</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-review.png" alt="自动审片：腕表胶片条上 0:03.2 的闪帧被标出，下方是重做后的画面，右侧是检查清单">
+<img src="docs/assets/feature-review.png" alt="麦富迪竞价片的审片：一帧里猫爪陷进碗里，旁边是只重做这一镜后的同一时刻">
 <p><b>2. 成片自动审片。</b>自动查闪帧、闪烁、切晚或漏切、邻镜残帧。可选的小模型再查产品漂移（CLIP、DINOv2）、人脸是不是同一个人（InsightFace）、口型对不对（SyncNet）。有问题会标出时间码，只重做那一个镜头。</p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-beat.png" alt="按镜头拆分：四个珠宝镜头和各自的灰模预演，下方波形上的剪切点都落在节拍上">
 <p><b>3. 按镜头拆细，剪辑卡点。</b>脚本拆成一个个镜头和生成分组，各自有时长和关键帧。<code>beat_grid.py</code> 从音乐里找出节拍，切点偏离节拍超过 60 毫秒（默认容差）就会被标出来。</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-models.png" alt="不绑模型：同一个香槟灰模镜头分出 MiniMax、Seedance 和你自己的模型三种成片">
 <p><b>4. 不绑模型，源码全开。</b>一个很小的供应商接口。示例适配器用你自己的密钥调用 MiniMax 和 Seedance 的官方 API，你也可以接自己的模型。Gemini 审片可选。所有源码都在这个仓库里。</p>
 </td>
 </tr>
@@ -113,9 +176,9 @@ flowchart LR
 
 **品牌用真素材。** 标志、包装文字、商品文案和 App 界面用你提供的文件叠上去，不让模型现画。
 
-## 案例位
+## 示例位
 
-成片还没有放进仓库。位置已经留好。
+这些位置用的是虚构品牌，还在补。做好的成片在上面的[案例](#案例)里。
 
 | 位置 | 将来放什么 | 现在 |
 | --- | --- | --- |
