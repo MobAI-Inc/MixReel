@@ -11,7 +11,7 @@ A project holds one brand or client and outlives any film, task or session. Keep
     requirements.md       the client's standing rules for deliverables, when they have any
     audience-taste.md     longings broken down, familiar material, approved scripts, rejected approaches
     competitors.md        how competitors advertise and what their audience reacts to
-    films.md              every film written or made for this brand, one row each
+    films.md              the idea ledger, or where it lives and how to reach it
     taste-library/        analyzed ads with frames and breakdowns
     assets/               logos, packaging, product photos, character art, screenshots, UI recordings
   <film>/                 one per ad or film
@@ -79,6 +79,8 @@ When a brand file is missing, build it from what the user supplies and show it t
 
 ## Record every film
 
-`brand/films.md` is how the next person finds what exists. Each row has the film folder, the event in one sentence, the key message, the idea or situation used, the state (drafted, approved, rejected or delivered), the script path, the final file and what the user said.
+`brand/films.md` is the ledger the next film learns from. It may hold the rows itself, or name a shared table, a spreadsheet such as an xlsx file in `brand/`, and say how to read and write it. The idea is the unit. One row is one film idea with a written script, and its state shows which drafts became films. Each row has the idea's name, the product or story it runs on, the key message, the theme, the moment it borrows, the state (drafted, in production, delivered, running, turned down or cancelled), the script and the final file with where each is stored, what the user said, the rework count and a rework log, and, once it runs, its ad sets and results.
 
-Add the row when a script is written. Update it when the script is approved or rejected and when the film is delivered. Read it before writing a new script, and do not reuse an event or idea it lists without saying so. When someone asks what has been made, answer from it and check the folders it names.
+The rework count is how many times the idea was sent back and made again after it was first handed over, whatever the stage. The rework log keeps, for each time, the stage, what went wrong and the user's own words, without analysis. Why the user turned an idea down, and the direction to move away from for now, go into `brand/audience-taste.md` in the user's words. Read both before writing a new idea.
+
+Add the row when a script is written. Update it when it goes into production, at each rework, when the film is delivered and when results come in. An idea the user approved or that performed well is worth reusing, carried onto another product or story, and one borrowed moment can sit under many ideas. A turned-down idea is avoided, and one product or story does not get the same idea twice. Say in the script which earlier idea it reuses. When someone asks what has been made, answer from the ledger and check the files it names.

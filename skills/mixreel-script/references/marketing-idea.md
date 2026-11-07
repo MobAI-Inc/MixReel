@@ -27,4 +27,4 @@ Stop at the idea only when the user asked to see ideas or alternatives first. Gi
 
 Either way the approval that must come before any illustration is approval of the finished script.
 
-Rejected directions stay rejected. Do not revive one by changing the caption.
+Rejected directions stay rejected. Do not revive one by changing the caption. An approved or well-performing idea may be carried onto another product or story, as [project](../../mixreel/references/project.md#record-every-film) describes.
