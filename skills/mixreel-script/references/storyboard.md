@@ -20,4 +20,4 @@ Note duration, which shots are generated, which are a real recording, and any li
 
 When the project has real images for these shots, lay them out in one `reference-sheet.jpg` in the film folder, with Pillow or ffmpeg. Use frames from `brand/taste-library/` and files from `brand/assets/`, each labelled with its shot id and source file. Nothing on the sheet is generated, so this does not break the rule about showing the script before any illustration. When the project has no such images, skip the sheet.
 
-Read [previs](previs.md) if the camera or the hands can hide the product.
+Every scene told in more than one shot in one place gets a [previs](previs.md).

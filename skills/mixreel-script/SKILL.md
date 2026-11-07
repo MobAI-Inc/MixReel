@@ -1,6 +1,6 @@
 ---
 name: mixreel-script
-description: Write a product-ad script and, when blocking is hard, a 3D previs before any paid generation. Accepts a brief and optional reference evidence.
+description: Write a product-ad script and a 3D previs for every multi-shot scene before any paid generation. Accepts a brief and optional reference evidence.
 ---
 
 # Script a product ad
@@ -20,7 +20,7 @@ A request as short as "write a 20-second script" is enough to start. Fill the br
 | 3. The idea | [Marketing idea](references/marketing-idea.md) |
 | 4. Borrow structure only, when there is a reference | [Adaptation](references/adaptation.md) |
 | 5. Shot list | [Storyboard](references/storyboard.md) and [the template](assets/SCRIPT.template.md) |
-| 6. Previs, if blocking needs it | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
+| 6. Previs, for every scene with more than one shot in one place | [When to previs](references/previs.md) and [How to render](references/previs-render.md) |
 | 7. Read the script back | [Ad script](references/ad-script.md) again. Write product or audience corrections back into the brand files, and add this film to `brand/films.md`. When the user approves or rejects the script, update its row and record the reason in `brand/audience-taste.md`. |
 
 ## Output
