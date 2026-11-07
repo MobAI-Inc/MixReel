@@ -10,7 +10,7 @@ MixReel is an open-source agent skill for **ad, e-commerce, and product short vi
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 <p align="center">
-  <img src="docs/assets/hero.png" alt="MixReel: a grey 3D previs of a handbag next to the finished bordeaux leather frame, a film strip, a beat-marked waveform, and review checks" width="1000">
+  <img src="docs/assets/hero.png" alt="One frame from each of the six showcase films, with brand, ad type and generation cost under each" width="1000">
 </p>
 
 ## Showcase
@@ -83,21 +83,19 @@ These are unofficial concept ads made to show the workflow. They are not affilia
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-previs.png" alt="3D previs: a top view with two camera positions, grey clay start and end frames of a perfume bottle, and the finished amber bottle at the same two angles">
+<img src="docs/assets/feature-previs.png" alt="Two shots from the Myfoodie performance ad, each shown as the grey Blender previs next to the finished frame">
 <p><b>1. 3D previs before you pay.</b> Block the camera, lens, and move in Blender (or the built-in Python fallback) first. The product shape and the camera angle stay the same from the grey plan to the finished frame.</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-review.png" alt="Automatic review: a watch film strip with a flash frame flagged at 0:03.2, the regenerated frame below it, and a checklist of checks">
+<img src="docs/assets/feature-review.png" alt="Review in the Myfoodie performance ad: a frame where the cat's paw sinks into the bowl, next to the same moment after only that shot was regenerated">
 <p><b>2. Automatic review on the cut.</b> The checker finds flashes, flicker, late or missed cuts, and stray frames. Optional small models add product drift (CLIP, DINOv2), face identity (InsightFace), and lip sync (SyncNet). Problems get a timecode, and only the bad shot is regenerated.</p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-beat.png" alt="Shot by shot: four jewelry shots with their grey previs, above a waveform whose cuts land on beat markers">
 <p><b>3. Shot by shot, cut on the beat.</b> The script is split into shots and generation groups, each with its own timing and keyframes. <code>beat_grid.py</code> finds the beats in your track, and QA flags any cut more than 60 ms off the beat (the default tolerance).</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-models.png" alt="Any model: one grey champagne shot plan branching to three finished versions labelled MiniMax, Seedance, and your model">
 <p><b>4. Any model, fully open.</b> One small provider interface. Example adapters call the official MiniMax and Seedance APIs with your own key, and you can add your own. Gemini review is optional. Every line of the source is in this repository.</p>
 </td>
 </tr>

@@ -10,7 +10,7 @@ MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent s
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 <p align="center">
-  <img src="docs/assets/hero.png" alt="MixReel 主视觉：手袋的灰模三维预演与酒红皮革成片对照，胶片条、标出节拍的波形和审片检查项" width="1000">
+  <img src="docs/assets/hero.png" alt="六条案例成片各取一帧，下面标着品牌、广告类型和生成费用" width="1000">
 </p>
 
 ## 案例
@@ -83,21 +83,19 @@ MixReel 是开源项目：面向**广告、电商和产品短视频**的 agent s
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-previs.png" alt="三维预演：俯视图上的两个机位、香水瓶的灰模首尾帧，以及同样两个角度的琥珀色成片">
+<img src="docs/assets/feature-previs.png" alt="麦富迪竞价片里的两个镜头，左边是 Blender 灰模预演，右边是对应的成片画面">
 <p><b>1. 先三维预演，再花钱生成。</b>机位、焦段和运镜先在 Blender（或内置的纯 Python 后端）里摆好。从灰模到成片，产品形状和机位都对得上。</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-review.png" alt="自动审片：腕表胶片条上 0:03.2 的闪帧被标出，下方是重做后的画面，右侧是检查清单">
+<img src="docs/assets/feature-review.png" alt="麦富迪竞价片的审片：一帧里猫爪陷进碗里，旁边是只重做这一镜后的同一时刻">
 <p><b>2. 成片自动审片。</b>自动查闪帧、闪烁、切晚或漏切、邻镜残帧。可选的小模型再查产品漂移（CLIP、DINOv2）、人脸是不是同一个人（InsightFace）、口型对不对（SyncNet）。有问题会标出时间码，只重做那一个镜头。</p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-beat.png" alt="按镜头拆分：四个珠宝镜头和各自的灰模预演，下方波形上的剪切点都落在节拍上">
 <p><b>3. 按镜头拆细，剪辑卡点。</b>脚本拆成一个个镜头和生成分组，各自有时长和关键帧。<code>beat_grid.py</code> 从音乐里找出节拍，切点偏离节拍超过 60 毫秒（默认容差）就会被标出来。</p>
 </td>
 <td width="50%" valign="top">
-<img src="docs/assets/feature-models.png" alt="不绑模型：同一个香槟灰模镜头分出 MiniMax、Seedance 和你自己的模型三种成片">
 <p><b>4. 不绑模型，源码全开。</b>一个很小的供应商接口。示例适配器用你自己的密钥调用 MiniMax 和 Seedance 的官方 API，你也可以接自己的模型。Gemini 审片可选。所有源码都在这个仓库里。</p>
 </td>
 </tr>

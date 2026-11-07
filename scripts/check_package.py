@@ -107,8 +107,7 @@ def check_package(root):
             errors.append('private configuration in package: ' + str(path.relative_to(root)))
         rel = path.relative_to(root).as_posix()
         allowed_still = rel in {'docs/assets/hero.png', 'docs/assets/social-preview.png',
-                                 'docs/assets/feature-previs.png', 'docs/assets/feature-review.png',
-                                 'docs/assets/feature-beat.png', 'docs/assets/feature-models.png'}
+                                 'docs/assets/feature-previs.png', 'docs/assets/feature-review.png'}
         if path.name == '.env' or path.name.startswith('.env.') or (
                 path.suffix in ('.mp4', '.mp3', '.webp', '.png', '.jpg') and not allowed_still):
             errors.append('private/media payload in package: ' + rel)
