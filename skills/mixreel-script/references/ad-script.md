@@ -16,6 +16,8 @@ Keep review notes out of audience-facing copy. Keep a disclosure when the portra
 
 Follow [brand fidelity](../../mixreel/references/brand-fidelity.md). Mark each precise element as a supplied recording, an edit overlay, or an explicitly authorized concept. A screen recording is an existing asset. It does not go through image generation. Do not redraw the product's own layout to fit a camera move.
 
+When the product's screen interrupts a scene, as when the viewer taps a choice or types something, the scene before and after the screen is one scene, with the same place, camera plan, wardrobe and light, in one generation request. When that runs past one request's maximum, split where the screen covers the picture and continue from the previous ending. What the viewer chose or typed is acted out inside the scene. Reserve the screen's time inside the generated timeline so sound runs under it, and take its background from a frame of the same clip.
+
 If the ending asks for an action, the action has to be one the product actually offers.
 
 ## Review before delivery

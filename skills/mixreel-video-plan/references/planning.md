@@ -2,7 +2,7 @@
 
 Keep editorial shots separate from generation requests.
 
-Default to one request for a connected sequence when it fits the verified maximum duration and the provider's reference limits. Split when the docs say you must: duration, incompatible inputs, a real scene change, or a smaller retry if one shot is likely to be rejected. Wanting a different opening frame is not, by itself, a reason to split.
+Default to one request for a connected sequence when it fits the verified maximum duration and the provider's reference limits. A product screen inside a scene does not split it, as [ad script](../../mixreel-script/references/ad-script.md#product-copy-and-ui-on-screen) describes. Split when the docs say you must: duration, incompatible inputs, a real scene change, or a smaller retry if one shot is likely to be rejected. Wanting a different opening frame is not, by itself, a reason to split.
 
 Shots that are a supplied recording use `production: local`. They do not appear in `generation_groups`.
 
