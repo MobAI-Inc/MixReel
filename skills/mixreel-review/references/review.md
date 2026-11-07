@@ -5,7 +5,7 @@ Check the artifact against the approved brief. State what you could watch, hear,
 | Artifact | Check |
 | --- | --- |
 | Script | Hook, one message, claims and their conditions, borrowed dimensions, readable copy, brand plan |
-| Keyframe | Framing, product or person match, action, light, unintended edits, real logo and package |
+| Keyframe | Framing, product or person match, action, light, unintended edits, real logo and package. For a scene of several shots, the frames played in order show the scene's event |
 | Prompt | Approved event and end state, ordered references, documented capabilities, copy assigned to the edit rather than the model |
 | Generated video | Camera and subject motion, continuity, identity, required events, defects through the whole file |
 | Master | In-points, joins, music accents, captions, UI and brand layers, duration, audio, export size |

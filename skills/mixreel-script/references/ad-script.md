@@ -22,13 +22,14 @@ If the ending asks for an action, the action has to be one the product actually 
 
 ## Review before delivery
 
-Read the sequence once as a viewer who does not know the product, and once against the brief.
+Read the sequence once as a viewer who does not know the product, and once against the brief. For the first reading, hand only the shot table, with no theme, notes or back story, to a fresh agent and ask it to retell what it saw and felt, and whether the payoff needed it to know how much time had passed. A retelling that misses the theme is a failure to fix before delivery.
 
 - Is the message visible in the first seconds?
-- Can the film be told as one event?
+- Can the film be told as one event, and does it deliver its stated theme read in order?
+- Is each cause followed by the face it lands on, with one beat per shot?
 - Does any beat depend on a fact the viewer was never shown?
 - Are brand, UI, and copy accurate and sourced?
 - Did a borrowed dimension leak into appearance or wording?
-- Does the film use an approach the user has rejected in the brand record, or repeat an event or idea listed in `brand/films.md`?
+- Does the film use an approach the user has rejected in the brand record, or give a product or story an idea it has already used, as `brand/films.md` shows?
 
 Do not certify a script as viral or high-converting.
